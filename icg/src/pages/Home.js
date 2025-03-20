@@ -51,7 +51,7 @@ function Home() {
           across industries.
         </p>
       </div>
-    
+      
       {/* Third Section: Project Milestones */}
 <div className="relative bg-black py-20">
   <h1 className="text-7xl text-center pt-10 text-white font-bold">
