@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/icg/static/css/main.f855e6bc.css",
-    "main.js": "/icg/static/js/main.9a027adc.js",
-    "static/js/453.eb5a7117.chunk.js": "/icg/static/js/453.eb5a7117.chunk.js",
-    "static/media/logo.svg": "/icg/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/icg/index.html",
-    "main.f855e6bc.css.map": "/icg/static/css/main.f855e6bc.css.map",
-    "main.9a027adc.js.map": "/icg/static/js/main.9a027adc.js.map",
-    "453.eb5a7117.chunk.js.map": "/icg/static/js/453.eb5a7117.chunk.js.map"
+    "main.css": "/NishantN2005.github.io/icg/static/css/main.f855e6bc.css",
+    "main.js": "/NishantN2005.github.io/icg/static/js/main.c676a840.js",
+    "static/js/453.eb5a7117.chunk.js": "/NishantN2005.github.io/icg/static/js/453.eb5a7117.chunk.js",
+    "static/media/logo.svg": "/NishantN2005.github.io/icg/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/NishantN2005.github.io/icg/index.html",
+    "main.f855e6bc.css.map": "/NishantN2005.github.io/icg/static/css/main.f855e6bc.css.map",
+    "main.c676a840.js.map": "/NishantN2005.github.io/icg/static/js/main.c676a840.js.map",
+    "453.eb5a7117.chunk.js.map": "/NishantN2005.github.io/icg/static/js/453.eb5a7117.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.9a027adc.js"
+    "static/js/main.c676a840.js"
   ]
 }
