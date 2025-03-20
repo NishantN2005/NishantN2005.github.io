@@ -66,13 +66,13 @@ function Team() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-[#001F54] font-marcellus">
+    <div className="min-h-screen bg-black text-[#001F54] ">
       <h1 className="text-5xl font-bold text-center pt-10 text-white">Our Team</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 px-4 py-10">
         {members.map((member, index) => (
           <div
             key={index}
-            className="relative bg-gray-100 shadow-md rounded-lg p-6 flex flex-col items-center group cursor-pointer transition-transform transform hover:scale-105 duration-300"
+            className="relative bg-slate-100 shadow-md rounded-lg p-6 flex flex-col items-center group cursor-pointer transition-transform transform hover:scale-105 duration-300"
           >
             {/* Profile Image */}
             <img

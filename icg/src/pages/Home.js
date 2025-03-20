@@ -1,38 +1,47 @@
+import React from 'react';
+import { motion } from 'framer-motion';
 import TimelineComponent from "../components/TimelineComponent";
 
 function Home() {
-    
+    const fade_in_text = 'Where talent meets opportunity'.split(' ')
   return (
     <div>
       {/* First Section */}
       <div
         className="sticky top-0 h-screen bg-cover bg-center"
         style={{
-          backgroundImage: `url('/Merage Undergraduate Student Association Cover.jpeg')`,
+          backgroundImage: `url('/anteater_icg_landing.jpg')`,
         }}
       >
-        <div className="bg-black bg-opacity-80 h-full flex items-center justify-center">
+        <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
           {/* Banner header */}
-          <div className="flex items-center space-x-4 text-center p-4 text-white">
-            {/* Logo */}
-            <img
-              src="/Square Logo_1_11zon.jpg"
-              alt="ICG Logo"
-              className="w-64 h-64 rounded-full"
-            />
+          <div className="flex items-center space-x-4 text-center p-4 text-slate-100">
             {/* Text */}
-            <div className="font-marcellus">
-              <h1 className="text-6xl text-left">Irvine Consulting Group</h1>
-              <p className="text-3xl text-left pt-5 pl-2">
-                Where talent meets opportunity
-              </p>
+            <div className="">
+              <h1 className="text-8xl text-left font-extrabold">Irvine Consulting Group</h1>
+              <div className='flex justify-center items-center pt-10 space-x-3'>
+                {fade_in_text.map((el, i) => (
+                        <motion.span
+                        className="text-4xl font-bold "
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            duration: 1,
+                            delay: i / 10,
+                        }}
+                        key={i}
+                        >
+                        {el}{" "}
+                        </motion.span>
+                    ))}
+                </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Second Section */}
-      <div className="relative bg-white h-64 font-marcellus text-[#001F54]">
+      <div className="relative bg-black h-64 font-bold text-slate-100">
         <h1 className="text-7xl text-center pt-16">What We Do.</h1>
         <p className="text-xl text-center py-10 px-64">
           We are a dynamic team of driven and innovative students from the UCI Paul
@@ -44,8 +53,8 @@ function Home() {
       </div>
     
       {/* Third Section: Project Milestones */}
-<div className="relative bg-white py-20">
-  <h1 className="font-marcellus text-7xl text-center pt-10 text-[#001F54]">
+<div className="relative bg-black py-20">
+  <h1 className="text-7xl text-center pt-10 text-white font-bold">
     Project Milestones
   </h1>
   <div className="flex justify-start items-center ml-80">

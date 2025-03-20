@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className='bg-[#003364] text-white flex p-4 font-marcellus justify-between'>
+    <footer className='bg-black border-t text-white flex p-4 justify-between'>
       <div>
         <h1 className='text-5xl py-5'>Irvine Consulting Group</h1>
         <p>© 2025 ICG</p>
