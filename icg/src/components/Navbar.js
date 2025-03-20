@@ -7,7 +7,7 @@ function Navbar() {
       <div className="text-2xl font-bold">
         ICG
       </div>
-
+  
       {/* Nav Links */}
       <div className="space-x-6">
         <a href="#/team" className="hover:text-gray-300">
