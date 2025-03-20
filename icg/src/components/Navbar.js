@@ -10,7 +10,7 @@ function Navbar() {
 
       {/* Nav Links */}
       <div className="space-x-6">
-        <a href="#team" className="hover:text-gray-300">
+        <a href="/#team" className="hover:text-gray-300">
           Our Team
         </a>
         <a href="/" className="hover:text-gray-300">
