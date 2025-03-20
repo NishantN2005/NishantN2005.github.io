@@ -1,7 +1,7 @@
 {
   "name": "icg",
   "version": "0.1.0",
-  "homepage": "https://NishantN2005.github.io/icg/",
+  "homepage": "https://NishantN2005.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
