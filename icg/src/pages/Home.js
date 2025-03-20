@@ -8,12 +8,12 @@ function Home() {
       <div
         className="sticky top-0 h-screen bg-cover bg-center"
         style={{
-          backgroundImage: `url('/Image Compressors Tweak.jpg')`,
+          backgroundImage: `url('/Merage Undergraduate Student Association Cover.jpeg')`,
         }}
       >
-        <div className="bg-white bg-opacity-70 h-full flex items-center justify-center">
+        <div className="bg-black bg-opacity-80 h-full flex items-center justify-center">
           {/* Banner header */}
-          <div className="flex items-center space-x-4 text-center p-4 text-[#001F54]">
+          <div className="flex items-center space-x-4 text-center p-4 text-white">
             {/* Logo */}
             <img
               src="/Square Logo_1_11zon.jpg"
