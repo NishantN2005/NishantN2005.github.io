@@ -79,10 +79,10 @@ function TimelineComponent() {
             </TimelineOppositeContent>
 
             <TimelineSeparator>
-              <TimelineDot sx={{ bgcolor: '#376cbb', width: '40px', height: '40px' }} />
+              <TimelineDot sx={{ bgcolor: '#013167', width: '40px', height: '40px' }} />
               {/* Only render the connector if it's not the last item */}
               {index !== timelineData.length - 1 && (
-                <TimelineConnector sx={{ bgcolor: '#376cbb', height: '100px' }} />
+                <TimelineConnector sx={{ bgcolor: '#013167', height: '100px' }} />
               )}
             </TimelineSeparator>
 
