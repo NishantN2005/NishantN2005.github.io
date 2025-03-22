@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         marcellus: ['Marcellus', 'serif'], // Add Marcellus font
         serif: ['"Times New Roman"', 'serif'],
+        helvetica: ['Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },

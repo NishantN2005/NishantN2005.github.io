@@ -65,7 +65,7 @@ function TimelineComponent() {
           >
             <TimelineOppositeContent
               sx={{
-                color: 'white',
+                color: '#013167',
                 fontFamily: '"Marcellus", serif',
                 m: 0,
                 pr: 2,
@@ -87,8 +87,8 @@ function TimelineComponent() {
             </TimelineSeparator>
 
             <TimelineContent sx={{ px: 2 }}>
-              <h2 className="text-2xl font-semibold text-white">{item.heading}</h2>
-              <p className="text-lg text-white">{item.content}</p>
+              <h2 className="text-2xl font-semibold text-[#013167]">{item.heading}</h2>
+              <p className="text-lg text-[#013167]">{item.content}</p>
             </TimelineContent>
           </TimelineItem>
         </motion.div>
