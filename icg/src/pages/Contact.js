@@ -101,11 +101,11 @@ return (
                     }}
                 />
                 <div className="relative z-10 container mx-auto px-4 text-center">
-                    <h1 className="text-5xl font-bold mb-6">Work with Us</h1>
-                    <p className="text-xl max-w-2xl mx-auto mb-8">
+                    <h1 className="text-8xl font-extrabold mb-6">Work with Us</h1>
+                    <p className="text-3xl mx-auto my-10">
                     At Irvine Consulting Group, we don't just consult – we deliver impact.
                     </p>
-                    <div className="w-24 h-0.5 bg-white/50 mx-auto"></div>
+                    <div className="w-80 h-0.5 bg-white/50 mx-auto"></div>
                 </div>
             </div>
 
