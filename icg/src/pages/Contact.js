@@ -90,26 +90,25 @@ export default function Contact() {
 
 return (
     <div className="flex flex-col min-h-screen">
-    {/* Hero Section with City Background */}
-            <div className="relative bg-blue-900 h-screen text-white py-32">
-                <div
-                    className="absolute inset-0 bg-cover bg-center opacity-30"
-                    style={{
-                    backgroundImage: "url('/Downtown_Irvine_1920.png')",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                    }}
-                />
-                <div className="relative z-10 container mx-auto px-4 text-center">
-                    <h1 className="text-8xl font-extrabold mb-6">Work with Us</h1>
-                    <p className="text-3xl mx-auto my-10">
-                    At Irvine Consulting Group, we don't just consult – we deliver impact.
-                    </p>
-                    <div className="w-80 h-0.5 bg-white/50 mx-auto"></div>
-                </div>
-            </div>
+    <div className="relative bg-blue-900 h-screen text-white flex flex-col items-center justify-center">
+        <div
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{
+                backgroundImage: "url('/Downtown_Irvine_1920.png')",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+            }}
+        />
+        <div className="relative z-10 text-center">
+            <h1 className="text-8xl font-extrabold mb-6">Work with Us</h1>
+            <p className="text-3xl mx-auto my-10">
+                At Irvine Consulting Group, we don't just consult – we deliver impact.
+            </p>
+            <div className="w-80 h-0.5 bg-white/50 mx-auto"></div>
+        </div>
+    </div>
 
-            {/* Services Section */}
+    {/* Services Section */}
         <div className="container mx-auto px-4 py-16">
             <h2 className="text-7xl font-bold text-[#013167] mb-6">Our Services</h2>
             <p className="text-[#013167] mb-12 max-w-5xl text-xl">
