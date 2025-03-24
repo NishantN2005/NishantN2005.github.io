@@ -53,7 +53,7 @@ function Team() {
       },
       {
           name: 'Andrew Nguyen',
-          major: 'Business Administration',
+          major: 'Business Economics',
           image: '/andrew.png',
           linkedin: 'https://www.linkedin.com/in/andrewn26/',
         },

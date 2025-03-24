@@ -21,13 +21,13 @@ function Navbar() {
           Home
         </a>
         <a href="#/students" className="hover:text-gray-300">
-          For Students Team
+          Join Us
         </a>
         <a href="#/team" className="hover:text-gray-300">
           Meet Our Team
         </a>
         <a href="#/contact" className="hover:text-gray-300">
-          Contact
+          Work With Us
         </a>
         
       </div>

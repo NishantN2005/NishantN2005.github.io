@@ -5,6 +5,39 @@ import { Link } from 'react-router-dom';
 
 function Home() {
     const fade_in_text = 'Where talent meets opportunity'.split(' ')
+
+    const timelineData = [
+        {
+          leftText: 'Pre-Project',
+          heading: 'Initial Consultation',
+          content: 'We begin with an initial consultation to learn more about your organization, including your mission, operations, and goals. We’ll discuss any challenges you’re facing and how we can assist. Upon mutual agreement, we’ll proceed with the project.',
+        },
+        {
+          leftText: 'Week 1',
+          heading: 'Project Team Introduction',
+          content: 'Meet the team you’ll collaborate with over the next 6-8 weeks. During this kickoff call, the team will introduce themselves, discuss your pain points, clarify objectives, and draft a tailored project roadmap.',
+        },
+        {
+          leftText: 'Week 2-4',
+          heading: 'Research & Analysis',
+          content: 'The team dives into research, ideation, and data analysis to develop customized recommendations. Progress updates will be shared during weekly check-ins to ensure alignment.',
+        },
+        {
+          leftText: 'Week 5',
+          heading: 'Mid-Project Review',
+          content: 'We’ll conduct a formal mid-project check-in, providing a presentation or written deliverable to confirm we’re on the right path and make adjustments if necessary.',
+        },
+        {
+          leftText: 'Week 6-8',
+          heading: 'Final Presentation',
+          content: 'After thorough review by the Director of Consulting and project mentor(s), the team will present their findings and actionable recommendations in a detailed final presentation.',
+        },
+        {
+          leftText: 'Post-Project',
+          heading: 'Client Feedback',
+          content: 'We conclude by gathering feedback on the team’s performance, onboarding process, communication, and the quality of our deliverables to continually improve our approach.',
+        },
+      ];
   return (
     <div>
       {/* First Section */}
@@ -52,11 +85,11 @@ function Home() {
       <div className="relative bg-white h-fit font-bold text-[#013167] flex flex-col items-center justify-center">
         <h1 className="text-5xl pt-16">What We Do.</h1>
         <div className="flex items-center justify-center w-2/3 h-fit gap-8 py-10">
-          <img
-            src="/Image Compressors Tweak.jpg"
-            alt="ICG Logo"
-            className="w-96 h-96 rounded-full shadow-lg border-4 border-[#013167] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"  
-          />
+            <img
+                src="/Image Compressors Tweak.jpg"
+                alt="ICG Logo"
+                className="w-96 h-96 rounded-full shadow-lg border-4 border-[#013167] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"  
+            />
           <div className='w-11/12'>
             <h1 className="text-8xl py-5 text-left font-extrabold">Mission</h1>
             
@@ -73,7 +106,7 @@ function Home() {
     Project Milestones
   </h1>
   <div className="flex justify-start items-center ml-80">
-    <TimelineComponent/>
+    <TimelineComponent timelineData={timelineData}/>
   </div>
 </div>
 
