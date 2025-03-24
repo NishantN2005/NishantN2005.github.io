@@ -3,13 +3,11 @@ import {
   BarChart2,
   Target,
   Heart,
-  User,
-  GitBranch,
   ChevronLeft,
   ChevronRight,
   Mail,
   ChartNoAxesCombined,
-  Megaphone,
+  Merge,
   Linkedin,
 } from "lucide-react"
 import { useState } from "react"
@@ -98,7 +96,7 @@ export default function Contact() {
 return (
     <div className="flex flex-col min-h-screen">
     {/* Hero Section with City Background */}
-            <div className="relative bg-blue-900 text-white py-32">
+            <div className="relative bg-blue-900 h-screen text-white py-32">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-30"
                     style={{
@@ -127,58 +125,45 @@ return (
             </p>
 
             {/* Services Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Market Research */}
                 <ServiceCard
                     icon={<Search className="w-12 h-12 text-blue-500" />}
                     title="Market Research"
-                    description="Understanding industry trends and discovering key insights"
+                    description="Comprehensive and critical analysis to uncover industry trends, customer behavior, and competitive dynamics shaping strategic decisions."
                 />
 
-                {/* Impact Measurement */}
+                {/* Product Development */}
                 <ServiceCard
                     icon={<BarChart2 className="w-12 h-12 text-teal-500" />}
-                    title="Impact Measurement"
-                    description="Quantifying how you have helped your communities"
+                    title="Product Development"
+                    description="Identification of new product opportunities and development of value-driven pricing strategies informed by market and client-specific data."
                 />
 
-                {/* Identifying KPIs */}
+                {/* Go-To-Market Strategy */}
                 <ServiceCard
                     icon={<Target className="w-12 h-12 text-orange-500" />}
-                    title="Identifying KPIs"
-                    description="Determining suitable metrics to measure success"
+                    title="Go-To-Market Strategy"
+                    description="Design and implementation of targeted strategies to successfully launch products or services into specific markets with measurable outcomes."
                 />
 
                 {/* Growth Strategy */}
                 <ServiceCard
                     icon={<ChartNoAxesCombined className="w-12 h-12 text-green-500" />}
                     title="Growth Strategy"
-                    description="Helping your business expand in both size and impact"
+                    description="Evaluation and optimization of opportunities for market expansion, operational efficiency, and revenue acceleration."
                 />
-                {/* Fundraising Strategy */}
+                {/*Branding Strategy */}
                 <ServiceCard
                     icon={<Heart className="w-12 h-12 text-red-500" />}
-                    title="Fundraising Strategy"
-                    description="Identifying techniques to grow your revenue"
+                    title="Branding Strategy"
+                    description="Development of innovative branding approaches to establish compelling brand identity and strengthen market presence."
                 />
-                {/* HR Management */}
+                {/* Merger and Acquisition Advisory */}
                 <ServiceCard
-                    icon={<User className="w-12 h-12 text-purple-500" />}
-                    title="HR Management"
-                    description="Optimizing the work of individuals in your business"
-                />
-
-                {/* Feasibility Analysis */}
-                <ServiceCard
-                    icon={<GitBranch className="w-12 h-12 text-yellow-500" />}
-                    title="Feasibility Analysis"
-                    description="Forecasting the ease of implementing new initiatives"
-                />
-                {/* Marketing Strategy */}
-                <ServiceCard
-                    icon={<Megaphone className="w-12 h-12 text-pink-500" />}
-                    title="Marketing Strategy"
-                    description="Forecasting the ease of implementing new initiatives"
+                    icon={<Merge className="w-12 h-12 text-purple-500" />}
+                    title="Merger and Acquisition Advisory"
+                    description="Strategic guidance throughout the M&A process, including opportunity assessment, market research, due diligence, and post-merger integration planning."
                 />
             </div>
         </div>
@@ -187,7 +172,7 @@ return (
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-30"
                 style={{
-                    backgroundImage: "url('/placeholder.svg?height=600&width=1200')",
+                    backgroundImage: "url('/icg_test_img.jpg')",
                     backgroundPosition: "bottom",
                 }}
             />
@@ -294,7 +279,7 @@ return (
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-blue-900">Team Member</h3>
+                <h3 className="text-xl font-semibold text-blue-900">Michelle Choy</h3>
                 <div className="flex items-center space-x-2 mt-1">
                   <Mail className="w-4 h-4 text-gray-500" />
                   <a href="mailto:choyma@uci.edu" className="text-gray-600 hover:text-blue-600">
