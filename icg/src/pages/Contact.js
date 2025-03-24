@@ -38,18 +38,13 @@ export default function Contact() {
     const testimonials = [
     {
         id: 1,
-        quote: "Testimonials here",
-        author: "[Name] CA",
+        quote: "Working with the Irvine Consulting Group has been such a pleasure. We gained a lot of insight into our go-to-market strategy from their advice - which significantly altered the trajectory of our business.",
+        author: "Former CTO of Dell",
     },
     {
         id: 2,
-        quote: "The team at Irvine Consulting Group delivered exceptional results that exceeded our expectations.",
-        author: "John Smith CA",
-    },
-    {
-        id: 3,
-        quote: "Their strategic insights transformed our approach and helped us achieve our goals.",
-        author: "Jane Doe CA",
+        quote: "You are all a bunch of cuties",
+        author: "Eric",
     },
     ]
     const timelineData = [
