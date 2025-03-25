@@ -54,7 +54,7 @@ function Students() {
 
   return (
     <div className="">
-    <div className="h-screen relative bg-cover bg-center" style={{ backgroundImage: `url("/icg_join_us.jpg")` }}>
+    <div className="h-screen relative bg-cover bg-center" style={{ backgroundImage: `url("/icg_join_us_2.jpeg")` }}>
       {/* Mask overlay */}
       <div className="absolute inset-0 bg-[#013060] bg-opacity-80"></div>
       {/* Content */}

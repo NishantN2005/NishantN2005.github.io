@@ -8,7 +8,7 @@ function Footer() {
       
       <div className='flex items-center justify-center'>
       <img
-              src="/Square Logo_1_11zon.jpg"
+              src="/ICG default + name darkblue bg.png"
               alt="ICG Logo"
               className="w-32 h-32 rounded-full mr-10"
             />

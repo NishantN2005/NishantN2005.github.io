@@ -94,7 +94,7 @@ return (
         <div
             className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{
-                backgroundImage: "url('/Downtown_Irvine_1920.png')",
+                backgroundImage: "url('/icg_work_with_us.webp')",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
             }}
@@ -229,26 +229,24 @@ return (
 
         <div className="grid md:grid-cols-2 gap-8 border rounded-lg overflow-hidden">
           {/* Team Contact Info */}
-          <div className="p-8 flex flex-col space-y-8">
+          <div className="p-8 flex flex-col space-y-20  ">
             <div className="flex items-center space-x-6">
-              <div className="w-20 h-20 rounded-full overflow-hidden">
+              <div className="w-32 h-32 rounded-full overflow-hidden">
                 <img
                   src="/khang.png"
                   alt="Khang Nguyen"
-                  width={80}
-                  height={80}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-blue-900">Khang Nguyen</h3>
-                <div className="flex items-center space-x-2 mt-1">
+                <h3 className="text-2xl font-semibold text-blue-900">Khang Nguyen</h3>
+                <div className="flex items-center space-x-2 mt-1 text-xl">
                   <Mail className="w-4 h-4 text-gray-500" />
                   <a href="mailto:khantn11@uci.edu" className="text-gray-600 hover:text-blue-600">
                     Gmail
                   </a>
                 </div>
-                <div className="flex items-center space-x-2 mt-1">
+                <div className="flex items-center space-x-2 mt-1 text-xl">
                   <Linkedin className="w-4 h-4 text-gray-500" />
                   <a
                     href="https://www.linkedin.com/in/khangtoannguyen/"
@@ -263,24 +261,22 @@ return (
             </div>
 
             <div className="flex items-center space-x-6">
-              <div className="w-20 h-20 rounded-full overflow-hidden">
+              <div className="w-32 h-32 rounded-full overflow-hidden">
                 <img
                   src="/michelle.png"
                   alt="Team Member"
-                  width={80}
-                  height={80}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-blue-900">Michelle Choy</h3>
-                <div className="flex items-center space-x-2 mt-1">
+                <h3 className="text-2xl font-semibold text-blue-900">Michelle Choy</h3>
+                <div className="flex items-center space-x-2 mt-1 text-xl">
                   <Mail className="w-4 h-4 text-gray-500" />
                   <a href="mailto:choyma@uci.edu" className="text-gray-600 hover:text-blue-600">
                     Gmail
                   </a>
                 </div>
-                <div className="flex items-center space-x-2 mt-1">
+                <div className="flex items-center space-x-2 mt-1 text-xl">
                   <Linkedin className="w-4 h-4 text-gray-500" />
                   <a
                     href="https://www.linkedin.com/in/michelle-choy0/"
