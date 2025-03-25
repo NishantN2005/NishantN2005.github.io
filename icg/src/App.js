@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Router>
-      <div className="">
+      <div className="h-screen ">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
