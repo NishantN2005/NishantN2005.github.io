@@ -1,43 +1,35 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
-import TimelineComponent from "../components/TimelineComponent";
 import { Link } from 'react-router-dom';
 
 function Home() {
     const fade_in_text = 'Where talent meets opportunity'.split(' ')
 
-    const timelineData = [
-        {
-          leftText: 'Pre-Project',
-          heading: 'Initial Consultation',
-          content: 'We begin with an initial consultation to learn more about your organization, including your mission, operations, and goals. We’ll discuss any challenges you’re facing and how we can assist. Upon mutual agreement, we’ll proceed with the project.',
-        },
-        {
-          leftText: 'Week 1',
-          heading: 'Project Team Introduction',
-          content: 'Meet the team you’ll collaborate with over the next 6-8 weeks. During this kickoff call, the team will introduce themselves, discuss your pain points, clarify objectives, and draft a tailored project roadmap.',
-        },
-        {
-          leftText: 'Week 2-4',
-          heading: 'Research & Analysis',
-          content: 'The team dives into research, ideation, and data analysis to develop customized recommendations. Progress updates will be shared during weekly check-ins to ensure alignment.',
-        },
-        {
-          leftText: 'Week 5',
-          heading: 'Mid-Project Review',
-          content: 'We’ll conduct a formal mid-project check-in, providing a presentation or written deliverable to confirm we’re on the right path and make adjustments if necessary.',
-        },
-        {
-          leftText: 'Week 6-8',
-          heading: 'Final Presentation',
-          content: 'After thorough review by the Director of Consulting and project mentor(s), the team will present their findings and actionable recommendations in a detailed final presentation.',
-        },
-        {
-          leftText: 'Post-Project',
-          heading: 'Client Feedback',
-          content: 'We conclude by gathering feedback on the team’s performance, onboarding process, communication, and the quality of our deliverables to continually improve our approach.',
-        },
-      ];
+    const [activeTab, setActiveTab] = useState("sales")
+
+  const capabilities = {
+    sales: {
+      id: "sales",
+      title: "sales & marketing",
+      items: ["Marketing Strategy and Branding", "Sales Strategy", "Demographic Analysis"],
+    },
+    entry: {
+      id: "entry",
+      title: "entry & expansion",
+      items: ["Market Entry Strategy", "International Expansion", "Growth Planning"],
+    },
+    product: {
+      id: "product",
+      title: "product development",
+      items: ["Product Strategy", "User Experience Design", "Product Roadmapping"],
+    },
+    quantitative: {
+      id: "quantitative",
+      title: "quantitative analysis",
+      items: ["Data Analytics", "Financial Modeling", "Market Sizing"],
+    },
+  }
+    
   return (
     <div>
       {/* First Section */}
@@ -91,24 +83,83 @@ function Home() {
                 className="w-96 h-96 rounded-full shadow-lg border-4 border-[#013167] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"  
             />
           <div className='w-11/12'>
-            <h1 className="text-8xl py-5 text-left font-extrabold">Mission</h1>
+            <h1 className="text-6xl py-5 text-left font-bold">Mission</h1>
             
-            <p className='text-2xl text-left'>
+            <p className='text-2xl font-light   text-left'>
               Irvine Consulting Group is a growing undergraduate consulting organization at the UCI Paul Merage School of Business, dedicated to bridging the gap between academic knowledge and real-world impact. Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, resources, and professional development opportunities to help studens excel in consulting and beyond.
             </p>
           </div>
         </div>
       </div>
       
-      {/* Third Section: Project Milestones */}
-<div className="relative bg-white py-20">
-  <h1 className="text-7xl text-center pt-10 text-[#013167] font-bold">
-    Project Milestones
-  </h1>
-  <div className="flex justify-start items-center ml-80">
-    <TimelineComponent timelineData={timelineData}/>
-  </div>
-</div>
+      <div className='relative bg-white'>
+      <div className="py-20 container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-[#013167] mb-2">OUR CAPABILITIES</h2>
+        <p className="text-gray-700 text-lg">The bread and butter of ICG.</p>
+      </div>
+
+      {/* Tabs */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
+        {Object.values(capabilities).map((category) => (
+          <div key={category.id} className="flex flex-col items-center text-center">
+            <button
+              onClick={() => setActiveTab(category.id)}
+              className={`text-lg font-light italic mb-2 ${
+                activeTab === category.id ? "text-amber-500" : "text-gray-800"
+              }`}
+            >
+              {category.title}
+            </button>
+            <div
+              className={`w-full h-0.5 ${
+                activeTab === category.id ? "bg-amber-400" : "bg-gray-300"
+              }`}
+            ></div>
+
+            {/* Render the category's text directly below when active */}
+            {activeTab === category.id && (
+              <div className="mt-4 px-2 space-y-8">
+                {category.items.map((item, idx) => (
+                  <p className="text-lg text-gray-800" key={idx}>{item}</p>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* {/* Content
+      <div className="max-w-4xl mx-auto">
+        {Object.values(capabilities).map((category) => (
+          <div key={category.id} className={`space-y-8 ${activeTab === category.id ? "block" : "hidden"}`}>
+            {category.items.map((item, index) => (
+              <div key={index} className="text-lg text-gray-800">
+                {item}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div> */}
+    </div>
+    </div>
+      
+
+    {/* New Section */}
+    <div className="relative bg-white py-16">
+      <h2 className="text-5xl text-left text-[#013167] font-extrabold mb-8 pl-10">
+        Enough about us. <br /> <pr className='font-light '>What can we do for you?</pr>
+      </h2>
+
+      <div className="flex flex-col text-left  pl-10    space-y-4 text-2xl text-[#013167]">
+        <Link to="/students" className="underline hover:text-blue-900">
+         I am a student.
+        </Link>
+        <Link to="/contact" className="underline hover:text-blue-900">
+         I am a business.
+        </Link>
+      </div>
+    </div>
 
     </div>
   );
