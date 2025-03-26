@@ -1,10 +1,31 @@
 import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
+import FAQItem from '../components/FaqItem';
 function Home() {
     const fade_in_text = 'Where talent meets opportunity'.split(' ')
-
+    const faqs = [
+        {
+          question: "When is the next recruitment cycle for ICG?",
+          answer:
+            "The next recruitment cycle for Irvine Consulting Group will take place in Fall 2025. Stay tuned for more information on our recruitment process and application timeline.",
+        },
+        {
+          question: "How long does a typical consulting project take?",
+          answer:
+            "The duration of our consulting projects varies depending on the scope and complexity of the engagement - we typically aim to complete them in 10 weeks. However, depending on the scope and demand of the project this can fluctuate to ensure quality.",
+        },
+        {
+          question: "What makes your consulting approach different?",
+          answer:
+            "Our approach is distinguished by three key factors: First, we focus on practical, implementable solutions rather than theoretical frameworks. Second, we emphasize knowledge transfer to ensure your team can sustain the improvements after our engagement ends. Third, we measure our success by the tangible results and ROI we deliver to your business.",
+        },
+        {
+          question: "How do you measure the success of your consulting engagements?",
+          answer:
+            "We define and track key performance indicators (KPIs) that align with your business objectives. These might include financial metrics like revenue growth or cost savings, operational metrics like efficiency improvements, or strategic metrics like market share gains. We establish these metrics at the beginning of our engagement and regularly report on progress throughout the project.",
+        },
+      ]
     
   return (
     <div>
@@ -56,12 +77,12 @@ function Home() {
             <img
                 src="/Image Compressors Tweak.jpg"
                 alt="ICG Logo"
-                className="w-96 h-96 rounded-full shadow-lg border-4 border-[#013167] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"  
+                className="w-96 h-96 shadow-lg border-4 border-[#013167] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"  
             />
             <div className='w-11/12'>
             <h1 className="text-6xl py-5 text-left font-bold">Mission</h1>
             
-            <p className='text-2xl font-light text-left'>
+            <p className='text-xl font-light text-left'>
               Irvine Consulting Group is a growing undergraduate consulting organization at the UCI Paul Merage School of Business, dedicated to bridging the gap between academic knowledge and real-world impact. Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, resources, and professional development opportunities to help studens excel in consulting and beyond.
             </p>
             </div>
@@ -73,30 +94,6 @@ function Home() {
             <div className="container mx-auto px-4 mb-12 relative">
             <h2 className="text-4xl md:text-5xl font-bold text-[#013167] text-center">
               WHO OUR CLIENTS HAVE WORKED WITH
-              <span className="absolute ml-2">
-                <svg
-                width="120"
-                height="60"
-                viewBox="0 0 120 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="transform translate-x-4"
-                >
-                <path
-                  d="M5 5C25 5 100 5 100 30C100 55 115 55 115 55"
-                  stroke="#013167"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M115 45L115 55L105 55"
-                  stroke="#013167"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                </svg>
-              </span>
             </h2>
             </div>
 
@@ -112,13 +109,31 @@ function Home() {
           </div>
         </div>
 
+    <div className=" relative bg-white py-10 text-[#013167]">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-extrabold text-[#013167] mb-4">Frequently Asked Questions</h2>
+          <p className="text-lg max-w-2xl mx-auto">
+            Find answers to common questions about our consulting services and approach.
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          {faqs.map((faq, index) => (
+            <FAQItem key={index} question={faq.question} answer={faq.answer} isLast={index === faqs.length - 1} />
+          ))}
+        </div>
+
+      </div>
+    </div>
+
         {/* New Section */}
     <div className="relative bg-white py-16">
       <h2 className="text-5xl text-left text-[#013167] font-extrabold mb-8 pl-10">
         Enough about us. <br /> <pr className='font-light '>What can we do for you?</pr>
       </h2>
 
-      <div className="flex flex-col text-left  pl-10    space-y-4 text-2xl text-[#013167]">
+      <div className="flex flex-col text-left  pl-10 space-y-4 text-2xl text-[#013167]">
         <Link to="/students" className="underline hover:text-blue-900">
          I am a student.
         </Link>
