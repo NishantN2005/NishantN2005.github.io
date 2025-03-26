@@ -8,9 +8,9 @@ function Navbar() {
       <div className="text-2xl font-bold">
         <Link to="/">
           <img
-            src="/ICG icon darkblue.png"
+            src="/ICG C-design darkblue .png"
             alt="ICG Logo"
-            className="w-16 h-16 inline-block mr-2"
+            className="w-32 h-16 inline-block mr-2"
           />
         </Link>
       </div>
