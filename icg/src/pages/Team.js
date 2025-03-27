@@ -66,8 +66,8 @@ function Team() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#013167] ">
-      <h1 className="text-5xl font-bold text-center pt-10 text-[#013167]">Our Team</h1>
+    <div className="min-h-screen bg-white text-icgblue ">
+      <h1 className="text-5xl font-bold text-center pt-10 text-icgblue">Our Team</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 px-4 py-10">
         {members.map((member, index) => (
           <div

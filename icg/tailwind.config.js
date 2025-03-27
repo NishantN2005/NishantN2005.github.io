@@ -10,6 +10,9 @@ module.exports = {
         serif: ['"Times New Roman"', 'serif'],
         helvetica: ['Helvetica', 'Arial', 'sans-serif'],
       },
+      colors: {
+        icgblue: '#061e2a',
+      },
     },
   },
   plugins: [],

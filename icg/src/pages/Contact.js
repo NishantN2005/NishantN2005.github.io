@@ -110,8 +110,8 @@ return (
 
     {/* Services Section */}
         <div className="container mx-auto px-4 py-16">
-            <h2 className="text-5xl font-bold text-[#013167] mb-6">Our Services.</h2>
-            <p className="text-[#013167] mb-12 max-w-5xl text-xl">
+            <h2 className="text-5xl font-bold text-icgblue mb-6">Our Services.</h2>
+            <p className="text-icgblue mb-12 max-w-5xl text-xl">
                 Our team is made up of top undergraduate talent from the UCI Paul Merage School of Business, selected for
                 their analytical rigor, leadership, and drive. With every engagement, ICG brings tailored, data-backed
                 strategies that combine fresh thinking with business precision—transforming challenges into opportunities and
@@ -210,10 +210,10 @@ return (
             </div>
     </div>
     <div className="relative bg-white py-20 mx-20">
-            <h1 className="text-5xl pt-10  text-[#013167] font-bold">
+            <h1 className="text-5xl pt-10  text-icgblue font-bold">
                     Project Overview.
             </h1>
-            <p className="text-[#013167] font-light text-lg mb-10 mt-4">
+            <p className="text-icgblue font-light text-lg mb-10 mt-4">
                     We believe in full transparency with our partners. Here's how you can expect your project with us to progress.
             </p>
             <div className="flex justify-start items-center">

@@ -66,14 +66,14 @@ function Students() {
           A team of fun-loving hard-working problem solvers! Scroll to learn more about your ICG experience and event timeline.
         </p>
         <button
-          className="mt-6 bg-[#013167] text-white px-6 py-3 text-xl font-bold rounded-md hover:bg-[#001f54] border"
+          className="mt-6 bg-icgblue text-white px-6 py-3 text-xl font-bold rounded-md hover:bg-[#001f54] border"
           onClick={() => window.open('https://docs.google.com/forms/d/...')}
         >
           Apply Now
         </button>
       </div>
       </div>
-      <div className='w-full bg-white text-[#013167]'>
+      <div className='w-full bg-white text-icgblue'>
         <DevelopmentCarousel />
       </div>
 
@@ -113,7 +113,7 @@ function Students() {
       </div>
 
       {/* Timeline Section */}
-      <div className="flex flex-col items-center justify-center py-16 bg-white text-[#013167]">
+      <div className="flex flex-col items-center justify-center py-16 bg-white text-icgblue">
         <h1 className="text-5xl font-bold mb-10">What To Look Out For.</h1>
         <ApplicationTimeline timelineData={timelineData} />
       </div>

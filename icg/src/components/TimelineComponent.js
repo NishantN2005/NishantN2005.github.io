@@ -33,7 +33,7 @@ function TimelineComponent({timelineData}) {
           >
             <TimelineOppositeContent
               sx={{
-                color: '#013167',
+                color: '#061e2a',
                 m: 0,
                 pr: 2,
                 pt: 2,
@@ -46,16 +46,16 @@ function TimelineComponent({timelineData}) {
             </TimelineOppositeContent>
 
             <TimelineSeparator>
-              <TimelineDot sx={{ bgcolor: '#013167', width: '40px', height: '40px' }} />
+              <TimelineDot sx={{ bgcolor: '#061e2a', width: '40px', height: '40px' }} />
               {/* Only render the connector if it's not the last item */}
               {index !== timelineData.length - 1 && (
-                <TimelineConnector sx={{ bgcolor: '#013167', height: '100px' }} />
+                <TimelineConnector sx={{ bgcolor: '#061e2a', height: '100px' }} />
               )}
             </TimelineSeparator>
 
             <TimelineContent sx={{ px: 2 }}>
-              <h2 className="text-2xl font-semibold text-[#013167]">{item.heading}</h2>
-              <p className="text-lg text-[#013167]">{item.content}</p>
+              <h2 className="text-2xl font-semibold text-icgblue">{item.heading}</h2>
+              <p className="text-lg text-icgblue">{item.content}</p>
             </TimelineContent>
           </TimelineItem>
         </motion.div>

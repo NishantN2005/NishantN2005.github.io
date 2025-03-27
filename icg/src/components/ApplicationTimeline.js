@@ -32,7 +32,7 @@ function ApplicationTimeline({ timelineData }) {
           <TimelineItem sx={{ alignItems: 'start', '&:before': { display: 'none' } }}>
             <TimelineOppositeContent
               sx={{
-                color: '#013167',
+                color: '#061e2a',
                 fontWeight: 'bold',
                 textAlign: 'right',
               }}
@@ -41,9 +41,9 @@ function ApplicationTimeline({ timelineData }) {
             </TimelineOppositeContent>
 
             <TimelineSeparator>
-              <TimelineDot sx={{ bgcolor: '#013167', width: '40px', height: '40px' }} />
+              <TimelineDot sx={{ bgcolor: '#061e2a', width: '40px', height: '40px' }} />
               {index !== timelineData.length - 1 && (
-                <TimelineConnector sx={{ bgcolor: '#013167', height: '100px' }} />
+                <TimelineConnector sx={{ bgcolor: '#061e2a', height: '100px' }} />
               )}
             </TimelineSeparator>
 
@@ -56,8 +56,8 @@ function ApplicationTimeline({ timelineData }) {
                 }}
               >
                 <CardContent>
-                  <h2 className="text-2xl font-semibold text-[#013167]">{item.heading}</h2>
-                  <p className="text-lg text-[#013167]">{item.content}</p>
+                  <h2 className="text-2xl font-semibold text-icgblue">{item.heading}</h2>
+                  <p className="text-lg text-icgblue">{item.content}</p>
                 </CardContent>
               </Card>
             </TimelineContent>
