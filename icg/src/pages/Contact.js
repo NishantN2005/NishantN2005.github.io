@@ -224,7 +224,7 @@ return (
     <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <p className="text-gray-600 mb-2 text-4xl font-light">Let's Connect</p>
-          <h2 className="text-5xl font-bold text-blue-900">Contact Us.</h2>
+          <h2 className="text-5xl font-bold text-icgblue">Contact Us.</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 border rounded-lg overflow-hidden">

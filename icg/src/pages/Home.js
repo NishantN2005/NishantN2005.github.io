@@ -95,7 +95,7 @@ function Home() {
                 </h2>
             </div>
 
-            <div className="bg-icgblue pt-5">
+            <div className="bg-white pt-5">
                 <div
                     className="relative py-16 bg-cover bg-center w-2/3 h-96 mx-auto"
                     style={{
