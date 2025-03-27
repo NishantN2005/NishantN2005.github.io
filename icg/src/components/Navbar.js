@@ -4,29 +4,27 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <nav className="flex items-center justify-between bg-white px-4 py-2 text-[#001F54] shadow-md">
-      {/* Brand/Logo */}
-      <div className="text-2xl font-bold">
+    <div className="text-2xl font-bold">
         <Link to="/">
-          <img
-            src="/ICG C-design darkblue .png"
-            alt="ICG Logo"
-            className="w-32 h-16 inline-block mr-2"
-          />
+            <img
+                src="/ICG C-design darkblue .png"
+                alt="ICG Logo"
+                className="inline-block mr-2 w-40 h-auto"
+            />
         </Link>
-      </div>
-  
-      {/* Nav Links */}
+    </div>
+    {/* Nav Links */}
       <div className="space-x-10 text-xl font-bold mx-20">
         <a href="/" className="hover:text-gray-300">
           Home
         </a>
-        <a href="#/students" className="hover:text-gray-300">
+        <a href="/students" className="hover:text-gray-300">
           Join Us
         </a>
-        <a href="#/team" className="hover:text-gray-300">
+        <a href="/team" className="hover:text-gray-300">
           Meet Our Team
         </a>
-        <a href="#/contact" className="hover:text-gray-300">
+        <a href="/contact" className="hover:text-gray-300">
           Work With Us
         </a>
         

@@ -34,7 +34,6 @@ function TimelineComponent({timelineData}) {
             <TimelineOppositeContent
               sx={{
                 color: '#013167',
-                fontFamily: '"Marcellus", serif',
                 m: 0,
                 pr: 2,
                 pt: 2,

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import FAQItem from '../components/FaqItem';
@@ -72,7 +72,7 @@ function Home() {
 
     {/* Second Section */}
         <div className="relative bg-white h-fit font-bold text-[#013167] flex flex-col items-center justify-center">
-          <h1 className="text-5xl pt-16">What We Do.</h1>
+          <h1 className="text-5xl pt-16 font-bold">What We Do.</h1>
           <div className="flex items-center justify-center w-2/3 h-fit gap-8 py-10">
             <img
                 src="/Image Compressors Tweak.jpg"
@@ -80,7 +80,7 @@ function Home() {
                 className="w-96 h-96 shadow-lg border-4 border-[#013167] transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"  
             />
             <div className='w-11/12'>
-            <h1 className="text-6xl py-5 text-left font-bold">Mission</h1>
+            
             
             <p className='text-xl font-light text-left'>
               Irvine Consulting Group is a growing undergraduate consulting organization at the UCI Paul Merage School of Business, dedicated to bridging the gap between academic knowledge and real-world impact. Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, resources, and professional development opportunities to help studens excel in consulting and beyond.
@@ -92,8 +92,8 @@ function Home() {
         <div className='relative bg-white'>
           <div className="py-16">
             <div className="container mx-auto px-4 mb-12 relative">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#013167] text-center">
-              WHO OUR CLIENTS HAVE WORKED WITH
+            <h2 className="text-5xl md:text-5xl font-bold text-[#013167] text-center">
+              Who Our Clients Have Worked With.
             </h2>
             </div>
 
@@ -112,8 +112,8 @@ function Home() {
     <div className=" relative bg-white py-10 text-[#013167]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-[#013167] mb-4">Frequently Asked Questions</h2>
-          <p className="text-lg max-w-2xl mx-auto">
+          <h2 className="text-5xl font-bold text-[#013167] mb-4">Frequently Asked Questions</h2>
+          <p className="text-lg font-light max-w-2xl mx-auto">
             Find answers to common questions about our consulting services and approach.
           </p>
         </div>
@@ -129,7 +129,7 @@ function Home() {
 
         {/* New Section */}
     <div className="relative bg-white py-16">
-      <h2 className="text-5xl text-left text-[#013167] font-extrabold mb-8 pl-10">
+      <h2 className="text-5xl text-left text-[#013167] font-bold mb-8 pl-10">
         Enough about us. <br /> <pr className='font-light '>What can we do for you?</pr>
       </h2>
 

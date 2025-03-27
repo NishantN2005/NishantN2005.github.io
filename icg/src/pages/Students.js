@@ -59,10 +59,10 @@ function Students() {
       <div className="absolute inset-0 bg-[#013060] bg-opacity-80"></div>
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center p-10 h-full">
-        <h1 className="text-7xl font-extrabold text-white drop-shadow-lg mb-6">
+        <h1 className="text-8xl font-extrabold text-white drop-shadow-lg mb-6">
           Join Us Now
         </h1>
-        <p className="text-2xl text-white text-center max-w-3xl">
+        <p className="text-3xl text-white text-center font-light max-w-3xl">
           A team of fun-loving hard-working problem solvers! Scroll to learn more about your ICG experience and event timeline.
         </p>
         <button
