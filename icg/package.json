@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@formspree/react": "^3.0.0",
     "@mui/lab": "latest",
     "@mui/material": "latest",
     "@testing-library/dom": "^10.4.0",

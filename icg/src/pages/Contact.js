@@ -12,29 +12,11 @@ import {
   } from "lucide-react";
   import { useState } from "react";
   import TimelineComponent from "../components/TimelineComponent";
+  import { useForm, ValidationError } from '@formspree/react';
   
   export default function Contact() {
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
-    const [formSubmitted, setFormSubmitted] = useState(false);
-    const [formData, setFormData] = useState({
-      firstName: "",
-      lastName: "",
-      email: "",
-      message: "",
-    });
-  
-    const handleInputChange = (event) => {
-      const { name, value } = event.target;
-      setFormData((prevData) => ({
-        ...prevData,
-        [name]: value,
-      }));
-    };
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      setFormSubmitted(true);
-    };
+    const [state, handleSubmit] = useForm("xgvalkqb");
   
     const testimonials = [
       {
@@ -118,8 +100,7 @@ import {
               Work with Us
             </h1>
             <p className="text-2xl md:text-3xl mx-auto my-6 font-light max-w-md md:max-w-3xl">
-              At Irvine Consulting Group, we don't just consult – we deliver
-              impact.
+              At Irvine Consulting Group, we don't just consult – we deliver impact.
             </p>
             <div className="w-48 md:w-80 h-0.5 bg-white/50 mx-auto"></div>
           </div>
@@ -139,40 +120,31 @@ import {
           </p>
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Market Research */}
             <ServiceCard
               icon={<Search className="w-12 h-12 text-blue-500" />}
               title="Market Research"
               description="Comprehensive and critical analysis to uncover industry trends, customer behavior, and competitive dynamics shaping strategic decisions."
             />
-  
-            {/* Product Development */}
             <ServiceCard
               icon={<BarChart2 className="w-12 h-12 text-teal-500" />}
               title="Product Development"
               description="Identification of new product opportunities and development of value-driven pricing strategies informed by market and client-specific data."
             />
-  
-            {/* Go-To-Market Strategy */}
             <ServiceCard
               icon={<Target className="w-12 h-12 text-orange-500" />}
               title="Go-To-Market Strategy"
               description="Design and implementation of targeted strategies to successfully launch products or services into specific markets with measurable outcomes."
             />
-  
-            {/* Growth Strategy */}
             <ServiceCard
               icon={<ChartNoAxesCombined className="w-12 h-12 text-green-500" />}
               title="Growth Strategy"
               description="Evaluation and optimization of opportunities for market expansion, operational efficiency, and revenue acceleration."
             />
-            {/* Branding Strategy */}
             <ServiceCard
               icon={<Heart className="w-12 h-12 text-red-500" />}
               title="Branding Strategy"
               description="Development of innovative branding approaches to establish compelling brand identity and strengthen market presence."
             />
-            {/* Merger and Acquisition Advisory */}
             <ServiceCard
               icon={<Merge className="w-12 h-12 text-purple-500" />}
               title="Merger and Acquisition Advisory"
@@ -190,7 +162,6 @@ import {
               backgroundPosition: "bottom",
             }}
           />
-  
           <div className="relative z-10 container mx-auto px-4">
             <div className="flex items-center justify-center h-64 md:h-80 relative">
               <button
@@ -200,7 +171,6 @@ import {
               >
                 <ChevronLeft className="w-6 md:w-8 h-6 md:h-8" />
               </button>
-  
               <div className="text-center max-w-md md:max-w-3xl mx-auto px-4">
                 <div className="text-4xl md:text-6xl font-serif mb-4">"</div>
                 <p className="text-lg md:text-xl mb-6">
@@ -210,7 +180,6 @@ import {
                   {testimonials[currentTestimonial].author}
                 </p>
               </div>
-  
               <button
                 onClick={nextTestimonial}
                 className="absolute right-4 md:right-10 text-white p-2 focus:outline-none"
@@ -219,7 +188,6 @@ import {
                 <ChevronRight className="w-6 md:w-8 h-6 md:h-8" />
               </button>
             </div>
-  
             {/* Pagination Dots */}
             <div className="flex justify-center mt-6 space-x-2">
               {testimonials.map((_, index) => (
@@ -298,7 +266,7 @@ import {
                   </div>
                 </div>
               </div>
-  
+    
               <div className="flex items-center space-x-4 md:space-x-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
                   <img
@@ -334,103 +302,73 @@ import {
                 </div>
               </div>
             </div>
-  
+    
             {/* Contact Form */}
             <div className="bg-white p-8">
-              <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              {state.succeeded ? (
+                <div className="text-center text-xl font-semibold text-gray-800">
+                  Thanks for joining!
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label
-                      htmlFor="firstName"
+                      htmlFor="email"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
-                      First Name
+                      Email Address <span className="text-red-500">*</span>
                     </label>
                     <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      className="w-full p-2 border border-gray-300 rounded"
+                      id="email"
+                      type="email"
+                      name="email"
+                      className="w-full p-3 border border-gray-300 rounded-md"
                       required
                     />
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
+                    />
                   </div>
+    
                   <div>
                     <label
-                      htmlFor="lastName"
+                      htmlFor="message"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
-                      Last Name
+                      Message
                     </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      className="w-full p-2 border border-gray-300 rounded"
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
+                      className="w-full p-3 border border-gray-300 rounded-md"
                       required
+                    ></textarea>
+                    <ValidationError 
+                      prefix="Message" 
+                      field="message"
+                      errors={state.errors}
                     />
                   </div>
-                </div>
-  
-                <div className="mb-4">
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1"
+    
+                  <button
+                    type="submit"
+                    disabled={state.submitting}
+                    className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition-colors"
                   >
-                    Email <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full p-2 border border-gray-300 rounded"
-                    required
-                  />
-                </div>
-  
-                <div className="mb-6">
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows={5}
-                    className="w-full p-2 border border-gray-300 rounded"
-                    required
-                  />
-                </div>
-  
-                <button
-                  type="submit"
-                  className="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition-colors"
-                >
-                  Send
-                </button>
-  
-                {formSubmitted && (
-                  <p className="mt-4 text-center text-gray-700">
-                    Thank you! We will reach out to you soon.
-                  </p>
-                )}
-              </form>
+                    Submit
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
       </div>
     );
   }
-  
+    
   function ServiceCard({ icon, title, description }) {
     return (
       <div className="border rounded-lg p-8 flex flex-col items-center text-center hover:shadow-md transition-shadow">
