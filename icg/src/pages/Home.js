@@ -40,7 +40,7 @@ function Home() {
         <div className="bg-white bg-opacity-70 h-full flex items-center justify-start px-4 md:px-10">
           {/* Banner header */}
           <div className="text-icgblue ml-4 md:ml-20 -mt-16">
-            <h1 className="text-4xl sm:text-6xl lg:text-9xl font-extrabold leading-tight">
+            <h1 className="text-6xl sm:text-xl lg:text-9xl font-extrabold leading-tight">
               Irvine
               <br />
               Consulting
