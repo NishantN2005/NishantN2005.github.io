@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="h-screen ">
+      <div className="">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
