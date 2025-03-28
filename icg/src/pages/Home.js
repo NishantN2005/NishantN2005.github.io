@@ -14,7 +14,7 @@ function Home() {
     {
       question: "How long does a typical consulting project take?",
       answer:
-        "The duration of our consulting projects varies depending on the scope and complexity of the engagement - we typically aim to complete them in 10 weeks. However, depending on the scope and demand of the project this can fluctuate to ensure quality.",
+        "The duration of our consulting projects varies depending on the scope and complexity of the engagement - we typically aim to complete them in 10 weeks. However, depending on the scope and demand of the project, this can fluctuate to ensure quality.",
     },
     {
       question: "What makes your consulting approach different?",
@@ -24,7 +24,7 @@ function Home() {
     {
       question: "How do you measure the success of your consulting engagements?",
       answer:
-        "We define and track key performance indicators (KPIs) that align with your business objectives. These might include financial metrics like revenue growth or cost savings, operational metrics like efficiency improvements, or strategic metrics like market share gains. We establish these metrics at the beginning of our engagement and regularly report on progress throughout the project.",
+        "We define and track key performance indicators (KPIs) that align with your business objectives. These might include financial metrics like revenue growth or cost savings, operational metrics like efficiency improvements, or strategic metrics like market share gains. We establish these metrics at the beginning of our engagement and regularly report our progress throughout the project.",
     },
   ];
 
