@@ -105,7 +105,7 @@ function Students() {
                   {testimonial.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{testimonial.quote}</p>
-                <span className="text-5xl text-blue-400 font-serif">"</span>
+                <span className="text-6xl text-blue-400 font-serif">"</span>
               </div>
             ))}
           </div>
@@ -114,7 +114,7 @@ function Students() {
 
       {/* Timeline Section */}
       <div className="flex flex-col items-center justify-center py-16 bg-white text-icgblue">
-        <h1 className="text-5xl font-bold mb-10">What To Look Out For.</h1>
+        <h1 className="text-6xl font-bold mb-10">What To Look Out For.</h1>
         <ApplicationTimeline timelineData={timelineData} />
       </div>
 

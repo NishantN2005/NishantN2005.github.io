@@ -94,7 +94,7 @@ export default function DevelopmentCarousel() {
           <div className="flex items-center mb-4">
             <span className="text-8xl font-bold text-icgblue mr-8">{slides[currentSlide].number}</span>
             <div>
-              <h2 className="text-5xl font-medium text-icgblue">{slides[currentSlide].title}</h2>
+              <h2 className="text-6xl font-medium text-icgblue">{slides[currentSlide].title}</h2>
               <div className="w-16 h-1 bg-icgblue mt-2"></div>
             </div>
           </div>

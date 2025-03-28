@@ -110,8 +110,8 @@ return (
 
     {/* Services Section */}
         <div className="container mx-auto px-4 py-16">
-            <h2 className="text-5xl font-bold text-icgblue mb-6">Our Services.</h2>
-            <p className="text-icgblue mb-12 max-w-5xl text-xl">
+            <h2 className="text-6xl font-bold text-icgblue mb-6">Our Services.</h2>
+            <p className="text-icgblue mb-12 max-w-6xl text-xl">
                 Our team is made up of top undergraduate talent from the UCI Paul Merage School of Business, selected for
                 their analytical rigor, leadership, and drive. With every engagement, ICG brings tailored, data-backed
                 strategies that combine fresh thinking with business precision—transforming challenges into opportunities and
@@ -182,7 +182,7 @@ return (
                     </button>
 
                     <div className="text-center max-w-3xl mx-auto px-4">
-                        <div className="text-5xl font-serif mb-8">"</div>
+                        <div className="text-6xl font-serif mb-8">"</div>
                         <p className="text-xl mb-8">{testimonials[currentTestimonial].quote}</p>
                         <p className="text-sm">{testimonials[currentTestimonial].author}</p>
                     </div>
@@ -210,7 +210,7 @@ return (
             </div>
     </div>
     <div className="relative bg-white py-20 mx-20">
-            <h1 className="text-5xl pt-10  text-icgblue font-bold">
+            <h1 className="text-6xl pt-10  text-icgblue font-bold">
                     Project Overview.
             </h1>
             <p className="text-icgblue font-light text-lg mb-10 mt-4">
@@ -224,7 +224,7 @@ return (
     <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <p className="text-gray-600 mb-2 text-4xl font-light">Let's Connect</p>
-          <h2 className="text-5xl font-bold text-icgblue">Contact Us.</h2>
+          <h2 className="text-6xl font-bold text-icgblue">Contact Us.</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 border rounded-lg overflow-hidden">
