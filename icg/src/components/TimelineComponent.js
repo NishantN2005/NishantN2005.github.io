@@ -10,12 +10,20 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
 
-
-function TimelineComponent({timelineData}) {
+function TimelineComponent({ timelineData }) {
   return (
-    <Timeline sx={{[`& .${timelineOppositeContentClasses.root}`]: {
-      flex: 0.2,
-    }, maxWidth: '70%', paddingTop: '2rem' }}>
+    <Timeline
+      sx={{
+        maxWidth: { xs: '100%', md: '70%' },
+        paddingTop: '2rem',
+        mx: 'auto',
+        // Adjust opposite content: hide on mobile, show on md+
+        [`& .${timelineOppositeContentClasses.root}`]: {
+          flex: { xs: 0, md: 0.2 },
+          display: { xs: 'none', md: 'block' },
+        },
+      }}
+    >
       {timelineData.map((item, index) => (
         <motion.div
           key={index}
@@ -37,7 +45,7 @@ function TimelineComponent({timelineData}) {
                 m: 0,
                 pr: 2,
                 pt: 2,
-                minWidth: 100,
+                minWidth: { xs: 0, md: 100 },
                 fontWeight: 'bold',
                 textAlign: 'right',
               }}
@@ -47,9 +55,13 @@ function TimelineComponent({timelineData}) {
 
             <TimelineSeparator>
               <TimelineDot sx={{ bgcolor: '#061e2a', width: '40px', height: '40px' }} />
-              {/* Only render the connector if it's not the last item */}
               {index !== timelineData.length - 1 && (
-                <TimelineConnector sx={{ bgcolor: '#061e2a', height: '100px' }} />
+                <TimelineConnector
+                  sx={{
+                    bgcolor: '#061e2a',
+                    height: { xs: '50px', md: '100px' },
+                  }}
+                />
               )}
             </TimelineSeparator>
 
