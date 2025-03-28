@@ -307,7 +307,7 @@ import {
             <div className="bg-white p-8">
               {state.succeeded ? (
                 <div className="text-center text-xl font-semibold text-gray-800">
-                  Thanks for joining!
+                  We will contact you soon!
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -316,7 +316,7 @@ import {
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700 mb-1"
                     >
-                      Email Address <span className="text-red-500">*</span>
+                      Your Email Address <span className="text-red-500">*</span>
                     </label>
                     <input
                       id="email"
