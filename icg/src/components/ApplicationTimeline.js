@@ -14,11 +14,14 @@ function ApplicationTimeline({ timelineData }) {
   return (
     <Timeline
       sx={{
+        // Hide the opposite content on mobile and adjust its flex on larger screens.
         [`& .${timelineOppositeContentClasses.root}`]: {
-          flex: 0.15,
+          flex: { xs: 0, md: 0.15 },
+          display: { xs: 'none', md: 'block' },
         },
-        maxWidth: '70%',
+        maxWidth: { xs: '100%', md: '70%' },
         py: 4,
+        mx: 'auto',
       }}
     >
       {timelineData.map((item, index) => (
@@ -43,7 +46,12 @@ function ApplicationTimeline({ timelineData }) {
             <TimelineSeparator>
               <TimelineDot sx={{ bgcolor: '#061e2a', width: '40px', height: '40px' }} />
               {index !== timelineData.length - 1 && (
-                <TimelineConnector sx={{ bgcolor: '#061e2a', height: '100px' }} />
+                <TimelineConnector
+                  sx={{
+                    bgcolor: '#061e2a',
+                    height: { xs: '50px', md: '100px' },
+                  }}
+                />
               )}
             </TimelineSeparator>
 
