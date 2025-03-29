@@ -28,7 +28,7 @@ import {
       {
         id: 2,
         quote: "You are all a bunch of cuties",
-        author: "Eric",
+        author: "Eric Frankel",
       },
     ];
   

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function DevelopmentCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(1) // Starting with slide 2 (index 1)
+  const [currentSlide, setCurrentSlide] = useState(0) // Starting with slide 2 (index 1)
 
   const slides = [
     {
