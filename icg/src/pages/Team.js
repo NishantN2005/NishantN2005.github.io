@@ -52,12 +52,6 @@ function Team() {
           linkedin: 'https://www.linkedin.com/in/kimvuong-vntk/',
       },
       {
-          name: 'Andrew Nguyen',
-          major: 'Business Economics',
-          image: '/andrew.png',
-          linkedin: 'https://www.linkedin.com/in/andrewn26/',
-        },
-      {
           name: 'Michelle Choy',
           major: 'Business Administration',
           image: '/michelle.png',
