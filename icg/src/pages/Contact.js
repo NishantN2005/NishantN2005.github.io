@@ -22,14 +22,9 @@ import {
       {
         id: 1,
         quote:
-          "Working with the Irvine Consulting Group has been such a pleasure. We gained a lot of insight into our go-to-market strategy from their advice - which significantly altered the trajectory of our business.",
-        author: "Former CTO of Dell",
-      },
-      {
-        id: 2,
-        quote: "You are all a bunch of cuties",
-        author: "Eric Frankel",
-      },
+          "We really enjoyed working with the UCI team. We were impressed with the team's professionalism and willingness to jump directly into understanding a highly technical product. The team was able to help us independently verify key market indicators, market size, and technical trends. Overall, we couldn't have been more pleased with our experience working with this group of students and look forward to seeing them grow in to future leaders in their respective fields.",
+        author: "Artificial By Design",
+      }
     ];
   
     const timelineData = [
@@ -235,7 +230,7 @@ import {
               <div className="flex items-center space-x-4 md:space-x-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
                   <img
-                    src="/khang.png"
+                    src="/khang.jpeg"
                     alt="Khang Nguyen"
                     className="w-full h-full object-cover"
                   />
@@ -270,7 +265,7 @@ import {
               <div className="flex items-center space-x-4 md:space-x-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
                   <img
-                    src="/michelle.png"
+                    src="/michelle.jpg"
                     alt="Team Member"
                     className="w-full h-full object-cover"
                   />

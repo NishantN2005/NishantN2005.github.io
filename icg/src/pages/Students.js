@@ -36,20 +36,20 @@ function Students() {
     {
       id: 1,
       name: "Nishant",
-      quote: "i love icg",
-      imageUrl: "/nishant.png",
+      quote: "Joining Irvine Consulting Group has been one of the most valuable experiences of my college career.’ve grown so much in terms of problem-solving, communication, and leadership, all while being surrounded by an ambitious and supportive team. ICG truly feels like a launchpad.",
+      imageUrl: "/nishant.JPG",
     },
     {
       id: 2,
-      name: "Kim",
-      quote: "same",
-      imageUrl: "/kim.png",
+      name: "Zach Bosa",
+      quote: "ICG gave me the rare opportunity to work directly with real clients, pitch data-driven solutions, and lead parts of the presentation process. I’ve grown more confident in my ability to communicate insights clearly and professionally under pressure. If you’re curious or serious about consulting and want to accelerate your growth, ICG is the best place to start.",
+      imageUrl: "/zach.png",
     },
     {
       id: 3,
-      name: "Khang",
-      quote: "hell ye",
-      imageUrl: "/khang.png",
+      name: "Tiffany",
+      quote: "As someone who wants to pursue a career in consulting, ICG has been such an incredible learning experience. I never thought I'd be able to interact directly with CEOs on client projects or learn so much about consulting in such a small amount of time. If you're thinking about pursuing consulting, ICG is the way to do it :))",
+      imageUrl: "/tiffany.JPG",
     },
   ];
 

@@ -11,7 +11,7 @@ export default function DevelopmentCarousel() {
       title: "New Member Training",
       description:
         "To fully “Batman” our consultants, new members go through an intensive, hands-on training program covering core consulting skills — from market research and structured thinking to client communication and slide design. Training is immersive, practical, and collaborative.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export default function DevelopmentCarousel() {
       title: "Professional Development",
       description:
         "From resume workshops to problem frameworks, learn about what it takes to succeed as a consultant.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export default function DevelopmentCarousel() {
       title: "Client Projects",
       description:
         "At any point in your ICG journey, you’ll have the opportunity to work on real consulting engagements—partnering with real businesses, solving real challenges, and delivering impactful solutions.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export default function DevelopmentCarousel() {
       title: "Building a Community",
       description:
         "Duh look at these pics, aren’t we so [expletive]. Aside from our rigorous training program, our tight-knit culture makes ICG one of the most rewarding college experiences one can undertake.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ export default function DevelopmentCarousel() {
       title: "Leadership",
       description:
         "Develop leadership skills by taking on project management and team lead roles.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 6,
@@ -51,7 +51,7 @@ export default function DevelopmentCarousel() {
       title: "Social Events",
       description:
         "Join our fun social events and build lasting friendships with your fellow consultants.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 7,
@@ -59,7 +59,7 @@ export default function DevelopmentCarousel() {
       title: "Alumni Network",
       description:
         "Stay connected with ICG after graduation through our strong alumni network.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
     {
       id: 8,
@@ -67,7 +67,7 @@ export default function DevelopmentCarousel() {
       title: "Career Opportunities",
       description:
         "Leverage your ICG experience to land your dream job after graduation.",
-      imageUrl: "/nishant.png",
+      imageUrl: "/action.JPG",
     },
   ]
 

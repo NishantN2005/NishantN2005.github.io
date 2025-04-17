@@ -6,37 +6,37 @@ function Team() {
     {
         name: 'Khang Nguyen',
         major: 'Business Administration',
-        image: '/khang.png',
+        image: '/khang.jpeg',
         linkedin: 'https://www.linkedin.com/in/khangtoannguyen/',
       },
       {
         name: 'Mohan Krishnan',
         major: 'Business Administration',
-        image: '/mohan.png',
+        image: '/mohan.JPG',
         linkedin: 'https://www.linkedin.com/in/mohan-krishnan1/',
       },
       {
           name: 'Tiffany Bian',
           major: 'Business Administration',
-          image: '/tiffany.png',
+          image: '/tiffany.JPG',
           linkedin: 'https://www.linkedin.com/in/tiffany-bian/',
       },
       {
           name: 'Nishant Nuthalapati',
           major: 'Computer Science & Applied Mathematics',
-          image: '/nishant.png',
+          image: '/nishant.JPG',
           linkedin: 'https://www.linkedin.com/in/nishant-nuthalapati/',
         },
       {
           name: 'Justin Park',
           major: 'Business Economics',
-          image: '/justin.png',
+          image: '/justin.JPG',
           linkedin: 'https://www.linkedin.com/in/justin-park-bba724334/',
       },
       {
           name: 'Patrick Lee',
           major: 'Business Economics',
-          image: '/patrick.png',
+          image: '/patrick.JPG',
           linkedin: 'https://www.linkedin.com/in/leepatricks/',
       },
       {
@@ -48,13 +48,13 @@ function Team() {
       {
           name: 'Kim Vuong',
           major: 'Business Administration',
-          image: '/kim.png',
+          image: '/kim.JPG',
           linkedin: 'https://www.linkedin.com/in/kimvuong-vntk/',
       },
       {
           name: 'Michelle Choy',
           major: 'Business Administration',
-          image: '/michelle.png',
+          image: '/michelle.jpg',
           linkedin: 'https://www.linkedin.com/in/michelle-choy0/',
       },
   ];

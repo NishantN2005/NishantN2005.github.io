@@ -74,21 +74,62 @@ function Home() {
       <div className="relative bg-white h-fit font-bold text-icgblue flex flex-col items-center justify-center py-10">
         <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-2/3 gap-8 pt-16 pb-10 mx-auto">
           <img
-            src="/Image Compressors Tweak.jpg"
+            src="/team.jpg"
             alt="ICG Logo"
-            className="w-72 md:w-96 h-auto shadow-lg border-4 border-icgblue transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"
+            className="w-96 md:w-[500px] h-auto shadow-lg border-4 border-icgblue transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"
           />
           <div className="w-11/12 md:w-1/2 px-4">
-            <h1 className="text-3xl md:text-6xl pb-10 font-bold">Our Mission.</h1>
+            <h1 className="text-3xl md:text-6xl pb-10 font-bold">Welcome to ICG!</h1>
             <p className="text-base md:text-xl font-light text-left">
-              Irvine Consulting Group is a growing undergraduate consulting organization at the UCI Paul Merage School of Business, dedicated to bridging the gap between academic knowledge and real-world impact. Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, resources, and professional development opportunities to help students excel in consulting and beyond.
+            Irvine Consulting Group (ICG) is a collaborative, preeminent strategy consulting organization at UC Irvine, dedicated to shaping future leaders in consulting through experiential learning and development opportunities.            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Full-Width Section */}
+      <div
+        className="relative w-full h-[500px] bg-fixed bg-cover bg-center"
+        style={{
+          backgroundImage: `url('/driven candid.jpg')`,
+        }}
+      >
+        {/* ICG Blue Overlay */}
+        <div className="absolute inset-0 bg-icgblue bg-opacity-70"></div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+          <h2 className="text-4xl md:text-6xl font-bold mb-4">Driven by Students, Define by Impact</h2>
+          <p className="text-lg md:text-2xl max-w-3xl">
+          ICG partners closely with clients to deliver tailored recommendations that drive organizational growth, build sustainable competitive advantages, and create lasting impact.          </p>
+        </div>
+      </div>
+
+      {/* Split Section */}
+      <div className="relative w-full bg-white py-16">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
+          {/* Left Text Section */}
+          <div className="md:w-2/5 flex flex-col justify-between h-full text-center md:text-right">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue mb-10">
+              Our Mission
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700 mt-4">
+              Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, career exploration, skill training, and professional development opportunities to help students excel in consulting and beyond.
             </p>
+          </div>
+
+          {/* Right Image Section */}
+          <div className="md:w-3/5">
+            <img
+              src="/mohan_khang.png"
+              alt="Teamwork"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
 
       {/* Clients Section */}
-      <div className="relative bg-white">
+      {/*<div className="relative bg-white">
         <div className="py-16">
           <div className="container mx-auto px-4 mb-12 relative">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue text-center">
@@ -105,7 +146,7 @@ function Home() {
             />
           </div>
         </div>
-      </div>
+      </div>*/}
 
       {/* FAQ Section */}
       <div className="relative bg-white py-10 text-icgblue">
