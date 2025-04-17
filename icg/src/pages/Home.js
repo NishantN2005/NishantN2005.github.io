@@ -90,7 +90,7 @@ function Home() {
       <div
         className="relative w-full h-[500px] bg-fixed bg-cover bg-center"
         style={{
-          backgroundImage: `url('/driven candid.JPG')`,
+          backgroundImage: `url('/driven.webp')`,
         }}
       >
         {/* ICG Blue Overlay */}
