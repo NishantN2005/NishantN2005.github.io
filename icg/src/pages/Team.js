@@ -93,7 +93,7 @@ function Team() {
         <div className="relative z-10 flex flex-col items-center justify-center h-full overflow-y-auto pb-32">
 
           {/* Team Members Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-64">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-96">
           {teamMembers.map((member, index) => (
             <div
               key={index}
