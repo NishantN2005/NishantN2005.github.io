@@ -1,8 +1,27 @@
 import React from 'react';
 import ApplicationTimeline from '../components/ApplicationTimeline';
 import DevelopmentCarousel from "../components/DevelopmentCarousel";
+import FAQItem from '../components/FaqItem';
 
 function Students() {
+  const faqs=[
+    {
+      question: "Client Services",
+      answer: "At ICG, you don’t just shadow – you serve. You will work directly with real clients across industries, helping them solve meaningful business challenges. You’ll learn how to communicate professionally, ask the right questions, and technical skill that will help deliver strategic, impactful recommendations for our clients. It’s a chance to build client-facing confidence early in your consulting journey.",
+    },
+    {
+      question:"Career Exploration and Development",
+      answer: "Whether you’re still figuring it out or dead-set on consulting, ICG helps you explore your career path with intention. Our workshops, alumni panels, and professional development program are designed to help you understand different industries and roles, build your network, and sharpen your professional edge. We don’t just prep you for interviews — we help you find clarity and direction."
+    },
+    {
+      question:"Technical & Core Consulting Skills",
+      answer: "We start with the basics — and move fast. In your first few weeks, you’ll get training in case structuring, problem solving, slide design, and market research. From there, you’ll immediately apply these skills on client teams. With consistent feedback and high standards, ICG develops strong consultants through hands-on practice, not just theory."
+    },
+    {
+      question:"Industry Level Thinking",
+      answer:"ICG mirrors the pace and pressure of real-world consulting. You’ll learn how to work in ambiguity, break down complex problems, and develop solutions that make sense in real business contexts. Beyond technical skills, you’ll gain the mindset of a consultant: structured thinking, crisp communication, and the drive to deliver real results."
+    }
+  ]
   const timelineData = [
     {
       leftText: '4/16',
@@ -61,7 +80,7 @@ function Students() {
         style={{ backgroundImage: `url("/icg_join_us_2.jpeg")` }}
       >
         {/* Mask overlay */}
-        <div className="absolute inset-0 bg-[#013060] bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-[#061c2a] bg-opacity-80"></div>
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center p-6 sm:p-10 h-full">
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-extrabold text-white drop-shadow-lg mb-4">
@@ -77,6 +96,23 @@ function Students() {
           >
             Apply Now
           </button>
+        </div>
+      </div>
+
+      {/* Your ICG Experience Section */}
+      <div className="w-full text-icgblue py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Your ICG <span className='text-[#005d97]'>Experience</span></h2>
+          <div className="max-w-3xl mx-auto mt-10">
+            {faqs.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                isLast={index === faqs.length - 1}
+              />
+            ))}
+          </div>
         </div>
       </div>
 

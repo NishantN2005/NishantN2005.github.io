@@ -23,7 +23,13 @@ import {
         id: 1,
         quote:
           "We really enjoyed working with the UCI team. We were impressed with the team's professionalism and willingness to jump directly into understanding a highly technical product. The team was able to help us independently verify key market indicators, market size, and technical trends. Overall, we couldn't have been more pleased with our experience working with this group of students and look forward to seeing them grow in to future leaders in their respective fields.",
-        author: "Artificial By Design",
+        author: "Former CTO of Dell",
+      },
+      {
+        id:2,
+        quote:
+        "The team did an incredible job at proactively and independently seeking out relevant information that helped to understand and verify the market of our product.",
+        author:"Jason Green"
       }
     ];
   
@@ -38,7 +44,7 @@ import {
         leftText: "Week 1",
         heading: "Project Team Introduction",
         content:
-          "Meet the team you’ll collaborate with over the next 6-8 weeks. During this kickoff call, the team will introduce themselves, discuss your pain points, clarify objectives, and draft a tailored project roadmap.",
+          "Meet the team you'll collaborate with over the next 8-10 weeks. During this kickoff call, the team will introduce themselves, discuss your pain points, clarify objectives, and draft a tailored project roadmap.",
       },
       {
         leftText: "Week 2-4",
@@ -53,7 +59,7 @@ import {
           "We’ll conduct a formal mid-project check-in, providing a presentation or written deliverable to confirm we’re on the right path and make adjustments if necessary.",
       },
       {
-        leftText: "Week 6-8",
+        leftText: "Week 6-10",
         heading: "Final Presentation",
         content:
           "After thorough review by the Director of Consulting and project mentor(s), the team will present their findings and actionable recommendations in a detailed final presentation.",
@@ -94,7 +100,7 @@ import {
             <h1 className="text-6xl md:text-8xl font-extrabold mb-4">
               Work with Us
             </h1>
-            <p className="text-2xl md:text-3xl mx-auto my-6 font-light max-w-md md:max-w-3xl">
+            <p className="text-2xl md:text-3xl mx-auto my-6 font-light max-w-md md:max-w-3xl whitespace-nowrap">
               At Irvine Consulting Group, we don't just consult – we deliver impact.
             </p>
             <div className="w-48 md:w-80 h-0.5 bg-white/50 mx-auto"></div>
@@ -107,11 +113,7 @@ import {
             Our Services.
           </h2>
           <p className="text-icgblue mb-12 max-w-6xl text-lg md:text-xl">
-            Our team is made up of top undergraduate talent from the UCI Paul Merage
-            School of Business, selected for their analytical rigor, leadership, and
-            drive. With every engagement, ICG brings tailored, data-backed strategies
-            that combine fresh thinking with business precision—transforming challenges
-            into opportunities and ideas into results.
+          Our team is made up of top undergraduate talent from the University of California, Irvine, selected for their analytical rigor, leadership, and drive. With every engagement, ICG brings tailored, data-backed strategies that combine fresh thinking with business precision — transforming challenges into opportunities and ideas into results.
           </p>
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -245,7 +247,7 @@ import {
                       href="mailto:khantn11@uci.edu"
                       className="text-gray-600 hover:text-blue-600"
                     >
-                      Gmail
+                      Email
                     </a>
                   </div>
                   <div className="flex items-center space-x-1 md:space-x-2 mt-1 text-sm md:text-xl">
@@ -280,7 +282,7 @@ import {
                       href="mailto:choyma@uci.edu"
                       className="text-gray-600 hover:text-blue-600"
                     >
-                      Gmail
+                      Email
                     </a>
                   </div>
                   <div className="flex items-center space-x-1 md:space-x-2 mt-1 text-sm md:text-xl">

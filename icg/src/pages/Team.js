@@ -2,7 +2,7 @@ import React from 'react';
 import { GrLinkedin } from "react-icons/gr";
 
 function Team() {
-  const members = [
+  const teamMembers = [
     {
         name: 'Khang Nguyen',
         major: 'Business Administration',
@@ -60,37 +60,80 @@ function Team() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-icgblue ">
-      <h1 className="text-6xl font-bold text-center pt-10 text-icgblue">Our Team</h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 px-4 py-10">
-        {members.map((member, index) => (
-          <div
-            key={index}
-            className="relative bg-slate-100 shadow-md rounded-lg p-6 flex flex-col items-center group cursor-pointer transition-transform transform hover:scale-105 duration-300"
-          >
-            {/* Profile Image */}
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-48 h-48 object-cover rounded-full"
-            />
-            <h2 className="text-2xl font-bold mt-4">{member.name}</h2>
-            <p className="text-xl mt-2 text-center">{member.major}</p>
+    <div>
+      {/* Meet Our Team Section */}
+      <div
+        className="h-screen bg-cover bg-center text-white relative"
+        style={{
+          backgroundImage: `url('/team.jpg')`,
+        }}
+      >
+        {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-            {/* Hover Overlay with LinkedIn Icon */}
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center rounded-lg">
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-blue-200"
-              >
-                {/* Replace with your preferred LinkedIn icon */}
-                <GrLinkedin className='text-6xl'/>
-              </a>
+        {/* Content */}
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center">
+            Meet Our Team
+          </h1>
+        </div>
+      </div>
+
+      {/* Cityscape Section */}
+      <div
+        className="h-screen bg-fixed bg-cover bg-center text-white relative"
+        style={{
+          backgroundImage: `url('/cityscape.jpeg')`,
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full overflow-y-auto pb-32">
+
+          {/* Team Members Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-64">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="group flex flex-col items-center"
+            >
+              {/* 1) Wrap your image in its own relative container */}
+              <div className="relative w-64 h-64 mb-4 rounded-full overflow-hidden hover:cursor-pointer">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover
+                            filter transition duration-300
+                            group-hover:brightness-50"
+                />
+
+                {/* 2) Overlay now only lives inside the 64×64 box */}
+                <div className="absolute inset-0 bg-black bg-opacity-40
+                                flex items-center justify-center
+                                opacity-0 group-hover:opacity-100
+                                transition-opacity duration-300">
+                  {/* swap to text or icon as you please */}
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-lg font-bold"
+                  >
+                    <GrLinkedin className='text-5xl'/>
+                  </a>
+                </div>
+              </div>
+
+              {/* Name & Major */}
+              <h2 className="text-2xl font-bold text-white">{member.name}</h2>
+              <p className="text-lg text-gray-300">{member.major}</p>
             </div>
+          ))}
+
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

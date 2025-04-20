@@ -8,67 +8,35 @@ export default function DevelopmentCarousel() {
     {
       id: 1,
       number: "1",
-      title: "New Member Training",
+      title: "Client-Ready from Day One",
       description:
-        "To fully “Batman” our consultants, new members go through an intensive, hands-on training program covering core consulting skills — from market research and structured thinking to client communication and slide design. Training is immersive, practical, and collaborative.",
-      imageUrl: "/action.JPG",
+        "We move fast - ICG doesn’t wait for opportunity. We create it. You’ll be on the front lines of innovation, tackling real challenges alongside passionate teammates.",
+      imageUrl: "/topdown.png",
     },
     {
       id: 2,
       number: "2",
-      title: "Professional Development",
+      title: "Build Your Consulting Toolkit",
       description:
-        "From resume workshops to problem frameworks, learn about what it takes to succeed as a consultant.",
-      imageUrl: "/action.JPG",
+        "Professional development is built in. We invest in your growth through mentorship and training.",
+      imageUrl: "/abd.png",
     },
     {
       id: 3,
       number: "3",
-      title: "Client Projects",
+      title: "Learning and Pracrtice",
       description:
-        "At any point in your ICG journey, you’ll have the opportunity to work on real consulting engagements—partnering with real businesses, solving real challenges, and delivering impactful solutions.",
-      imageUrl: "/action.JPG",
-    },
-    {
-      id: 4,
-      number: "4",
-      title: "Building a Community",
-      description:
-        "Duh look at these pics, aren’t we so [expletive]. Aside from our rigorous training program, our tight-knit culture makes ICG one of the most rewarding college experiences one can undertake.",
-      imageUrl: "/action.JPG",
+        "Our culture embraces the grind — late nights, big wins, and learning through doing.",
+      imageUrl: "/talking.png",
     },
     {
       id: 5,
-      number: "5",
-      title: "Leadership",
+      number: "4",
+      title: "ICG Community and Network",
       description:
-        "Develop leadership skills by taking on project management and team lead roles.",
-      imageUrl: "/action.JPG",
-    },
-    {
-      id: 6,
-      number: "6",
-      title: "Social Events",
-      description:
-        "Join our fun social events and build lasting friendships with your fellow consultants.",
-      imageUrl: "/action.JPG",
-    },
-    {
-      id: 7,
-      number: "7",
-      title: "Alumni Network",
-      description:
-        "Stay connected with ICG after graduation through our strong alumni network.",
-      imageUrl: "/action.JPG",
-    },
-    {
-      id: 8,
-      number: "8",
-      title: "Career Opportunities",
-      description:
-        "Leverage your ICG experience to land your dream job after graduation.",
-      imageUrl: "/action.JPG",
-    },
+        "You’ll join a tight-knit, ambitious community that pushes you to be your best.",
+      imageUrl: "/gang.png",
+    }
   ]
 
   const nextSlide = () => {
