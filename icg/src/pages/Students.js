@@ -24,7 +24,7 @@ function Students() {
   ]
   const timelineData = [
     {
-      leftText: '4/16',
+      leftText: '',
       heading: 'Applications Open',
       content:
         'Begin the recruitment process by submitting an application @ https://some.googleform.here answering basic information and a couple short response questions so we get to know you better.',
@@ -56,7 +56,7 @@ function Students() {
       id: 1,
       name: "Nishant Nuthalapati",
       quote: "Joining Irvine Consulting Group has been one of the most valuable experiences of my college career.’ve grown so much in terms of problem-solving, communication, and leadership, all while being surrounded by an ambitious and supportive team. ICG truly feels like a launchpad.",
-      imageUrl: "/nishant.JPG",
+      imageUrl: "/nishant.png",
     },
     {
       id: 2,
@@ -68,7 +68,7 @@ function Students() {
       id: 3,
       name: "Tiffany Bian",
       quote: "As someone who wants to pursue a career in consulting, ICG has been such an incredible learning experience. I never thought I'd be able to interact directly with CEOs on client projects or learn so much about consulting in such a small amount of time. If you're thinking about pursuing consulting, ICG is the way to do it :))",
-      imageUrl: "/tiffany.JPG",
+      imageUrl: "/tiffany.png",
     },
   ];
 
@@ -102,7 +102,7 @@ function Students() {
       {/* Your ICG Experience Section */}
       <div className="w-full text-icgblue py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Your ICG <span className='text-[#005d97]'>Experience</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Your ICG <span className='text-[#005d97]'>Experience</span>.</h2>
           <div className="max-w-3xl mx-auto mt-10">
             {faqs.map((faq, index) => (
               <FAQItem

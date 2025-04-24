@@ -76,7 +76,7 @@ function Home() {
           <img
             src="/team.jpg"
             alt="ICG Logo"
-            className="w-96 md:w-[500px] h-auto shadow-lg border-4 border-icgblue transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"
+            className="w-96 md:w-[500px] h-auto shadow-lg  transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"
           />
           <div className="w-11/12 md:w-1/2 px-4">
             <h1 className="text-3xl md:text-6xl pb-10 font-bold">Welcome to ICG!</h1>
@@ -98,7 +98,7 @@ function Home() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4">Driven by Students, Define by Impact</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-4">Driven by Students, Defined by Impact.</h2>
           <p className="text-lg md:text-2xl max-w-3xl">
           ICG partners closely with clients to deliver tailored recommendations that drive organizational growth, build sustainable competitive advantages, and create lasting impact.          </p>
         </div>
@@ -110,7 +110,7 @@ function Home() {
           {/* Left Text Section */}
           <div className="md:w-2/5 flex flex-col justify-between h-full text-center md:text-right">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue mb-10">
-              Our Mission
+              Our Mission.
             </h2>
             <p className="text-lg md:text-xl text-gray-700 mt-4">
               Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, career exploration, skill training, and professional development opportunities to help students excel in consulting and beyond.
@@ -153,7 +153,7 @@ function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue mb-4">
-              Frequently Asked Questions
+              Frequently Asked Questions.
             </h2>
             <p className="text-sm sm:text-lg font-light max-w-2xl mx-auto">
               Find answers to common questions about our consulting services and approach.

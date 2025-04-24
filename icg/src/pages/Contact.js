@@ -232,7 +232,7 @@ import {
               <div className="flex items-center space-x-4 md:space-x-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
                   <img
-                    src="/khang.jpeg"
+                    src="/khang.png"
                     alt="Khang Nguyen"
                     className="w-full h-full object-cover"
                   />
@@ -267,7 +267,7 @@ import {
               <div className="flex items-center space-x-4 md:space-x-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden">
                   <img
-                    src="/michelle.jpg"
+                    src="/michelle.png"
                     alt="Team Member"
                     className="w-full h-full object-cover"
                   />

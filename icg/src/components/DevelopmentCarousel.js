@@ -65,7 +65,7 @@ export default function DevelopmentCarousel() {
 
         {/* Content Column */}
         <div className="flex flex-col items-center md:items-start">
-          <div className="flex items-center mb-4">
+          <div className="flex  mb-4">
             <span className="text-4xl md:text-8xl font-bold text-icgblue mr-4 md:mr-8">
               {slides[currentSlide].number}
             </span>
@@ -74,12 +74,11 @@ export default function DevelopmentCarousel() {
                 {slides[currentSlide].title}
               </h2>
               <div className="w-8 md:w-16 h-1 bg-icgblue mt-2"></div>
+              <p className="text-icgblue text-base md:text-xl mb-8 max-w-md text-center md:text-left mt-5">
+                {slides[currentSlide].description}
+              </p>
             </div>
           </div>
-
-          <p className="text-icgblue text-base md:text-xl mb-8 max-w-md text-center md:text-left">
-            {slides[currentSlide].description}
-          </p>
         </div>
       </div>
 
