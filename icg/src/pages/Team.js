@@ -14,7 +14,7 @@ function Team() {
         name: 'Mohan Krishnan',
         major: 'Business Administration',
         image: '/mohan.png',
-        hoverImage: '/IMG_1061.jpg',
+        hoverImage: '/mohan_silly.jpg',
         linkedin: 'https://www.linkedin.com/in/mohan-krishnan1/',
       },
       {
