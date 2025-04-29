@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import FAQItem from '../components/FaqItem';
 
 function Home() {
-  const fade_in_text = 'Where talent meets opportunity'.split(' ');
+  const fade_in_text = 'Where Talent Meets Opportunity'.split(' ');
   const faqs = [
     {
       question: "When is the next recruitment cycle for ICG?",
@@ -34,12 +34,12 @@ function Home() {
       <div
         className="sticky top-0 h-screen bg-cover bg-center"
         style={{
-          backgroundImage: `url('/Merage Undergraduate Student Association Cover.jpeg')`,
+          backgroundImage: `url('/skyline-downtown-new-york-new-york-usa.jpg')`,
         }}
       >
-        <div className="bg-white bg-opacity-70 h-full flex items-center justify-start px-4 md:px-10">
+        <div className="bg-icgblue bg-opacity-70 h-full flex items-center justify-start px-4 md:px-10">
           {/* Banner header */}
-          <div className="text-icgblue ml-4 md:ml-20 -mt-16">
+          <div className="text-white ml-4 md:ml-20 -mt-16">
             <h1 className="text-6xl sm:text-6xl lg:text-9xl font-extrabold leading-tight">
               Irvine
               <br />
@@ -63,7 +63,7 @@ function Home() {
                 </motion.span>
               ))}
             </div>
-            <button className="border border-icgblue border-2 w-fit px-4 py-2 mt-6 text-base sm:text-2xl font-bold hover:bg-icgblue hover:text-white">
+            <button className="border border-white border-2 w-fit px-4 py-2 mt-6 text-base sm:text-2xl font-bold hover:bg-icgblue hover:text-white">
               <Link to="contact">Contact Us</Link>
             </button>
           </div>

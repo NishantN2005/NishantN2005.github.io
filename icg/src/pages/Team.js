@@ -72,6 +72,13 @@ function Team() {
         image: '/brian_pfp.png',
         hoverImage: '/brian_silly.jpg',
         linkedin: 'https://www.linkedin.com/in/brianhanlee/'
+      },
+      {
+        name: 'Andrew Wagner',
+        major: 'Computational & Applied Mathematics',
+        image: '/andrew.png',
+        hoverImage: '/andrew_silly.jpeg',
+        linkedin: 'https://www.linkedin.com/in/andrew-wagner-31370329b/'
       }
   ];
 

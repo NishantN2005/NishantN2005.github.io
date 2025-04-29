@@ -98,7 +98,7 @@ import {
           />
           <div className="relative z-10 text-center px-4">
             <h1 className="text-6xl md:text-8xl font-extrabold mb-4">
-              Work with Us
+              Work With Us
             </h1>
             <p className="text-2xl md:text-3xl mx-auto my-6 font-light max-w-md md:max-w-3xl whitespace-nowrap">
               At Irvine Consulting Group, we don't just consult – we deliver impact.
