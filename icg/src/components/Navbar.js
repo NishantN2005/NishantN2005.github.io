@@ -22,6 +22,7 @@ function Navbar() {
           <a href="#/students" className="hover:text-gray-300">Join Us</a>
           <a href="#/team" className="hover:text-gray-300">Meet Our Team</a>
           <a href="#/contact" className="hover:text-gray-300">Work With Us</a>
+          <a href="#/events" className="hover:text-gray-300">Events</a>
         </div>
         {/* Mobile menu button */}
         <div className="md:hidden">
@@ -55,6 +56,7 @@ function Navbar() {
           <a href="#/students" className="block text-[#001F54] hover:text-gray-300 text-base font-bold">Join Us</a>
           <a href="#/team" className="block text-[#001F54] hover:text-gray-300 text-base font-bold">Meet Our Team</a>
           <a href="#/contact" className="block text-[#001F54] hover:text-gray-300 text-base font-bold">Work With Us</a>
+          <a href="#/events" className="block text-[#001F54] hover:text-gray-300 text-base font-bold">Events</a>
         </div>
       )}
     </nav>

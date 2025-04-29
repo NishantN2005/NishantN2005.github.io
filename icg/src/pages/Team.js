@@ -66,6 +66,13 @@ function Team() {
           hoverImage: '/IMG_4479.jpg',
           linkedin: 'https://www.linkedin.com/in/michelle-choy0/',
       },
+      {
+        name: 'Brian Lee',
+        major:'Environmental Science & Policy',
+        image: '/brian_pfp.png',
+        hoverImage: '/brian_silly.jpg',
+        linkedin: 'https://www.linkedin.com/in/brianhanlee/'
+      }
   ];
 
   return (

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Team from './pages/Team';
 import Students from './pages/Students';
 import Contact from './pages/Contact';
+import Events from './pages/Events';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
@@ -19,8 +20,9 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/students" element={<Students />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );
