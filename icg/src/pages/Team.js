@@ -94,6 +94,9 @@ function Team() {
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
+        {/* Gradient Clip at the Bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-icgblue to-transparent"></div>
+
         {/* Content */}
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center">
@@ -109,6 +112,9 @@ function Team() {
           backgroundImage: `url('/cityscape.jpeg')`,
         }}
       >
+          {/* Gradient Transition */}
+        <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-icgblue to-transparent h-20"></div>
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-icgblue bg-opacity-70"></div>
 
