@@ -7,7 +7,7 @@ function Team() {
         name: 'Khang Nguyen',
         major: 'Business Administration',
         image: '/khang.png',
-        hoverImage: '/Khang_Silly.jpg',
+        hoverImage: '/khang_silly.png',
         linkedin: 'https://www.linkedin.com/in/khangtoannguyen/',
       },
       {
@@ -120,8 +120,36 @@ function Team() {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full pb-32">
+          {/* Advisor Section */}
+          <div className="mb-16">
+            <div className="group flex flex-col items-center">
+              {/* Advisor Profile Picture */}
+              <div className="relative w-64 h-64 mb-4 rounded-full overflow-hidden hover:cursor-pointer mt-24 ">
+                <img
+                  src="/edward.png" // Replace with the advisor's image path
+                  alt="Edward Li"
+                  className="w-full h-full object-cover transition-opacity duration-300"
+                />
+              </div>
+
+              {/* Advisor Name & Title */}
+              <div className="text-center">
+                <h2 className="text-2xl font-bold text-white">Edward Li</h2>
+                <p className="text-lg text-gray-300">Club Advisor</p>
+                <a
+                    href="https://www.linkedin.com/in/edwardhanli/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block"
+                  >
+                    <GrLinkedin className="text-4xl text-white" />
+                  </a>
+              </div>
+            </div>
+          </div>
+
           {/* Team Members Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
