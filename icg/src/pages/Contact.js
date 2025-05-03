@@ -29,7 +29,7 @@ import {
         id:2,
         quote:
         "The team did an incredible job at proactively and independently seeking out relevant information that helped to understand and verify the market of our product.",
-        author:"Jason Green"
+        author:"CEO of Artificial By Design"
       }
     ];
   

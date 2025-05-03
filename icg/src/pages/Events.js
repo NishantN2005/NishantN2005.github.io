@@ -23,7 +23,7 @@ const upcomingEvents = [
   ]
 
   return (
-    <div className="relative container mx-auto px-4 py-8 md:px-6 md:py-12">
+    <div className="relative mx-auto px-4 py-8 md:px-6 md:py-12">
       {/* Header and Switch Bar */}
       <div className="flex flex-col md:flex-row items-center justify-between mb-8">
         {/* ICG Events Calendar Heading */}
