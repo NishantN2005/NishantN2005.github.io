@@ -87,7 +87,7 @@ import {
     return (
       <div className="flex flex-col min-h-screen">
         {/* Hero Section */}
-        <div className="relative bg-blue-900 h-screen text-white flex flex-col items-center justify-center">
+        <div className="relative bg-icgblue h-screen text-white flex flex-col items-center justify-center">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{
@@ -151,7 +151,7 @@ import {
         </div>
   
         {/* Testimonials Section */}
-        <div className="relative bg-blue-800 text-white py-16 md:py-20 mt-16">
+        <div className="relative bg-icgblue text-white py-16 md:py-20 mt-16">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{
