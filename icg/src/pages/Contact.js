@@ -100,7 +100,7 @@ import {
             <h1 className="text-6xl md:text-8xl font-extrabold mb-4">
               Work With Us
             </h1>
-            <p className="text-2xl md:text-3xl mx-auto my-6 font-light max-w-md md:max-w-3xl whitespace-nowrap">
+            <p className="text-2xl md:text-3xl mx-auto my-6 font-light max-w-3xl md:text-left md:text-center md:whitespace-nowrap md:-ml-16">
               At Irvine Consulting Group, we don't just consult – we deliver impact.
             </p>
             <div className="w-48 md:w-80 h-0.5 bg-white/50 mx-auto"></div>
@@ -375,4 +375,3 @@ import {
       </div>
     );
   }
-  
