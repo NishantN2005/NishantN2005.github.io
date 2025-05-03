@@ -99,7 +99,7 @@ function Team() {
 
         {/* Content */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center -mt-20 md:mt-0">
             Meet Our Team
           </h1>
         </div>
