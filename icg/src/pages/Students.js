@@ -102,7 +102,7 @@ function Students() {
       {/* Your ICG Experience Section */}
       <div className="w-full text-icgblue py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Your ICG <span className='text-[#005d97]'>Experience,</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Your ICG <span className='text-[#005d97]'>Experience.</span></h2>
           <div className="max-w-3xl mx-auto mt-10">
             {faqs.map((faq, index) => (
               <FAQItem
