@@ -88,7 +88,7 @@ function Team() {
       <div
         className="h-screen bg-cover bg-center bg-top text-white relative"
         style={{
-          backgroundImage: `url('/team.jpg')`,
+          backgroundImage: `url('/team3.png')`,
         }}
       >
       {/* Overlay for better text visibility */}
