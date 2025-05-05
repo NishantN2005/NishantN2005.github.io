@@ -91,12 +91,15 @@ function Team() {
           backgroundImage: `url('/team.jpg')`,
         }}
       >
-        {/* Blue Overlay */}
-        <div className="absolute inset-0 bg-icgblue bg-opacity-40"></div>
+      {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-icgblue bg-opacity-30"></div>
+
+        {/* Gradient Clip at the Bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-icgblue to-transparent"></div>
 
         {/* Content */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center mt-8 md:mt-0">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-center -mt-20 md:mt-0">
             Meet Our Team
           </h1>
         </div>

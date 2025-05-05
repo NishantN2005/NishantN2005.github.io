@@ -74,7 +74,7 @@ function Home() {
       <div className="relative bg-white h-fit font-bold text-icgblue flex flex-col items-center justify-center py-10">
         <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-2/3 gap-8 pt-16 pb-10 mx-auto">
           <img
-            src="/team.jpg"
+            src="/team2.JPG"
             alt="ICG Logo"
             className="w-96 md:w-[500px] h-auto shadow-lg  transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer"
           />

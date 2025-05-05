@@ -23,13 +23,13 @@ import {
         id: 1,
         quote:
           "We really enjoyed working with the UCI team. We were impressed with the team's professionalism and willingness to jump directly into understanding a highly technical product. The team was able to help us independently verify key market indicators, market size, and technical trends. Overall, we couldn't have been more pleased with our experience working with this group of students and look forward to seeing them grow in to future leaders in their respective fields.",
-        author: "Former CTO of Dell",
+        author: "CEO of Artificial by Design"
       },
       {
         id:2,
         quote:
-        "The team did an incredible job at proactively and independently seeking out relevant information that helped to understand and verify the market of our product.",
-        author:"CEO of Artificial By Design"
+        "In H1 2025 Artificial by Design partnered with UCI's ICG program on a deep-dive into the future of AI infrastructure—where advanced models, evolving chip architectures and real-time compute demands converge. The ICG team explored these domains with technical rigor by developing insights around model portability, edge to cloud tradeoffs and the architecture of AI-native data centers. We are grateful for the partnership with UCI and proud to support the next generation of thinkers shaping AI at the silicon and systems level. As we build toward a more interoperable, efficient AI future, collaborations like this are key. Wishing this amazing team the very best in their futures and career advancement.",
+        author:"Alex Veytsman Chief Technology and AI Officer @ Artificial by Design"
       }
     ];
   
