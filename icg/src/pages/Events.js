@@ -8,15 +8,6 @@ function Events() {
   // Sample data for upcoming events
 const upcomingEvents = [
     {
-      id: 1,
-      title: "Consulting 101: What is it?",
-      description: "Learn how to tackle consulting case interviews with industry professionals and get the opportunity to listen to successful UCI alumni.",
-      date: "May 8, 2025 • 6:00 PM",
-      location: "Antrepreneur Center",
-      image: "/speaker1.png",
-      formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSczYg0fm7ldwse1k6p09NfhfsZYUVNYtEsPr3a7il71Ins-cQ/viewform?embedded=true",
-    },
-    {
       id:2,
       title: "Breaking in: Recruitment and Corporate Strategies",
       description:" Join us for a panel discussion with industry professionals and learn how to break into the consulting industry.",
@@ -39,6 +30,15 @@ const upcomingEvents = [
   
   // Sample data for past events
   const pastEvents = [
+    {
+      id: 1,
+      title: "Consulting 101: What is it?",
+      description: "Learn how to tackle consulting case interviews with industry professionals and get the opportunity to listen to successful UCI alumni.",
+      date: "May 8, 2025 • 6:00 PM",
+      location: "Antrepreneur Center",
+      image: "/speaker1.png",
+      formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSczYg0fm7ldwse1k6p09NfhfsZYUVNYtEsPr3a7il71Ins-cQ/viewform?embedded=true",
+    },
   ]
 
   return (
