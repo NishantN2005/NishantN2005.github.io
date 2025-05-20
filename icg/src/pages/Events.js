@@ -8,15 +8,6 @@ function Events() {
   // Sample data for upcoming events
 const upcomingEvents = [
     {
-      id:2,
-      title: "Breaking in: Recruitment and Corporate Strategies",
-      description:" Join us for a panel discussion with industry professionals and learn how to break into the consulting industry.",
-      date: "May 15, 2025 • 6:00 PM",
-      location: "Antrepreneur Center",
-      image: "/ws_2_website.png",
-      formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSe-zI6VLwxLySvm5SR7PjJru5Vy-kdIvyASxJjE3WcEga608w/viewform?embedded=true",
-    },
-    {
       id: 3,
       title: "Inside the Firm: MBB, Big 4, and Beyond",
       description: "Learn about what it is like to work at top consulting firms and how to prepare for the recruitment process.",
@@ -39,6 +30,15 @@ const upcomingEvents = [
       image: "/speaker1.png",
       formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSczYg0fm7ldwse1k6p09NfhfsZYUVNYtEsPr3a7il71Ins-cQ/viewform?embedded=true",
     },
+    {
+      id:2,
+      title: "Breaking in: Recruitment and Corporate Strategies",
+      description:" Join us for a panel discussion with industry professionals and learn how to break into the consulting industry.",
+      date: "May 15, 2025 • 6:00 PM",
+      location: "Antrepreneur Center",
+      image: "/ws_2_website.png",
+      formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSe-zI6VLwxLySvm5SR7PjJru5Vy-kdIvyASxJjE3WcEga608w/viewform?embedded=true",
+    }
   ]
 
   return (
