@@ -145,7 +145,7 @@ function Students() {
                   {testimonial.name}
                 </h3>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">{testimonial.quote}</p>
-                <span className="text-4xl sm:text-6xl text-blue-400 font-serif">"</span>
+                <span className="text-5xl md:text-6xl text-icgblue font-extrabold leading-none mr-2">“</span>
               </div>
             ))}
           </div>
