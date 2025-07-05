@@ -55,7 +55,7 @@ function Students() {
     {
       id: 1,
       name: "Nishant Nuthalapati",
-      quote: "Joining Irvine Consulting Group has been one of the most valuable experiences of my college career.’ve grown so much in terms of problem-solving, communication, and leadership, all while being surrounded by an ambitious and supportive team. ICG truly feels like a launchpad.",
+      quote: "Joining Irvine Consulting Group has been one of the most valuable experiences of my college career. I’ve grown so much in terms of problem-solving, communication, and leadership, all while being surrounded by an ambitious and supportive team. ICG truly feels like a launchpad.",
       imageUrl: "/nishant.png",
     },
     {
