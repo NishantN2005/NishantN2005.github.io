@@ -110,18 +110,18 @@ function Home() {
                   <span className="text-5xl md:text-6xl text-icgblue font-extrabold leading-none mr-2">“</span>
                   <div>
                     <p className="text-base md:text-2xl font-medium text-gray-700">
-                      ICG exceeded our expectations with their professionalism and insight. Their recommendations were actionable and made a real difference for our business.
+                      The ICG team explored these domains with technical rigor by developing insights around model portability, edge to cloud tradeoffs and the architecture of AI-native data centers.
                     </p>
                   </div>
                 </div>
                 <div className="mt-6">
-                  <span className="block font-bold text-icgblue">Alex Kim</span>
-                  <span className="block text-gray-500 text-sm">CEO, Tough Cutie</span>
+                  <span className="block font-bold text-icgblue">Alex Veytsman</span>
+                  <span className="block text-gray-500 text-sm">CEO, Artificial By Design</span>
                 </div>
               </div>
               {/* Image */}
               <img
-                src="/ToughCutie.webp"
+                src="/abd.jpeg"
                 alt="ICG Team"
                 className="w-96 h-96 object-cover rounded-xl shadow-lg"
               />
