@@ -4,48 +4,49 @@ import DevelopmentCarousel from "../components/DevelopmentCarousel";
 import FAQItem from '../components/FaqItem';
 
 function Students() {
-  const faqs=[
+  const faqs = [
     {
       question: "Client Services",
-      answer: "At ICG, you don’t just shadow – you serve. You will work directly with real clients across industries, helping them solve meaningful business challenges. You’ll learn how to communicate professionally, ask the right questions, and technical skill that will help deliver strategic, impactful recommendations for our clients. It’s a chance to build client-facing confidence early in your consulting journey.",
+      answer: "At ICG, you don't just shadow – you serve. You will work directly with real clients across industries, helping them solve meaningful business challenges. You'll learn how to communicate professionally, ask the right questions, and technical skill that will help deliver strategic, impactful recommendations for our clients. It's a chance to build client-facing confidence early in your consulting journey.",
     },
     {
-      question:"Career Exploration and Development",
-      answer: "Whether you’re still figuring it out or dead-set on consulting, ICG helps you explore your career path with intention. Our workshops, alumni panels, and professional development program are designed to help you understand different industries and roles, build your network, and sharpen your professional edge. We don’t just prep you for interviews — we help you find clarity and direction."
+      question: "Career Exploration and Development",
+      answer: "Whether you're still figuring it out or dead-set on consulting, ICG helps you explore your career path with intention. Our workshops, alumni panels, and professional development program are designed to help you understand different industries and roles, build your network, and sharpen your professional edge. We don't just prep you for interviews — we help you find clarity and direction."
     },
     {
-      question:"Technical & Core Consulting Skills",
-      answer: "We start with the basics — and move fast. In your first few weeks, you’ll get training in case structuring, problem solving, slide design, and market research. From there, you’ll immediately apply these skills on client teams. With consistent feedback and high standards, ICG develops strong consultants through hands-on practice, not just theory."
+      question: "Technical & Core Consulting Skills",
+      answer: "We start with the basics — and move fast. In your first few weeks, you'll get training in case structuring, problem solving, slide design, and market research. From there, you'll immediately apply these skills on client teams. With consistent feedback and high standards, ICG develops strong consultants through hands-on practice, not just theory."
     },
     {
-      question:"Industry Level Thinking",
-      answer:"ICG mirrors the pace and pressure of real-world consulting. You’ll learn how to work in ambiguity, break down complex problems, and develop solutions that make sense in real business contexts. Beyond technical skills, you’ll gain the mindset of a consultant: structured thinking, crisp communication, and the drive to deliver real results."
+      question: "Industry Level Thinking",
+      answer: "ICG mirrors the pace and pressure of real-world consulting. You'll learn how to work in ambiguity, break down complex problems, and develop solutions that make sense in real business contexts. Beyond technical skills, you'll gain the mindset of a consultant: structured thinking, crisp communication, and the drive to deliver real results."
     }
-  ]
+  ];
+
   const timelineData = [
     {
-      leftText: '',
+      date: 'September 15, 2025',
       heading: 'Applications Open',
       content:
         'Begin the recruitment process by submitting an application by answering basic information and a couple short response questions so we get to know you better.',
     },
     {
-      leftText: '',
+      date: 'September 22, 2025',
       heading: '1st Round Interviews',
       content: 'We put a face to the application :).',
     },
     {
-      leftText: '',
+      date: 'September 29, 2025',
       heading: '2nd Round Interviews',
       content: 'Getting to know more about you and your interests.',
     },
     {
-      leftText: '',
+      date: 'October 6, 2025',
       heading: 'Case Competition',
       content: 'Pair up with other students and compete in a case competition.',
     },
     {
-      leftText: '',
+      date: 'October 13, 2025',
       heading: 'You are in!',
       content: 'If we believe you have what it takes, welcome to ICG.',
     },
@@ -55,13 +56,13 @@ function Students() {
     {
       id: 1,
       name: "Nishant Nuthalapati",
-      quote: "Joining Irvine Consulting Group has been one of the most valuable experiences of my college career. I’ve grown so much in terms of problem-solving, communication, and leadership, all while being surrounded by an ambitious and supportive team. ICG truly feels like a launchpad.",
+      quote: "Joining Irvine Consulting Group has been one of the most valuable experiences of my college career. I've grown so much in terms of problem-solving, communication, and leadership, all while being surrounded by an ambitious and supportive team. ICG truly feels like a launchpad.",
       imageUrl: "/nishant.png",
     },
     {
       id: 2,
       name: "Zach Bosa",
-      quote: "ICG gave me the rare opportunity to work directly with real clients, pitch data-driven solutions, and lead parts of the presentation process. I’ve grown more confident in my ability to communicate insights clearly and professionally under pressure. If you’re curious or serious about consulting and want to accelerate your growth, ICG is the best place to start.",
+      quote: "ICG gave me the rare opportunity to work directly with real clients, pitch data-driven solutions, and lead parts of the presentation process. I've grown more confident in my ability to communicate insights clearly and professionally under pressure. If you're curious or serious about consulting and want to accelerate your growth, ICG is the best place to start.",
       imageUrl: "/zach.png",
     },
     {
@@ -132,7 +133,7 @@ function Students() {
         <div className="relative container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="flex flex-col items-center text-center p-4">
+              <div key={testimonial.id} className="flex flex-col items-center text-center p-4 min-h-[600px]">
                 {/* Responsive circular avatar */}
                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 rounded-full overflow-hidden mb-4">
                   <img
@@ -144,8 +145,10 @@ function Students() {
                 <h3 className="text-lg sm:text-xl font-medium text-blue-900 mb-2">
                   {testimonial.name}
                 </h3>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">{testimonial.quote}</p>
-                <span className="text-5xl md:text-6xl text-icgblue font-extrabold leading-none mr-2">“</span>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base flex-grow">{testimonial.quote}</p>
+                <div className="mt-auto pt-4">
+                  <span className="text-5xl md:text-6xl text-icgblue font-extrabold leading-none">"</span>
+                </div>
               </div>
             ))}
           </div>
@@ -153,9 +156,11 @@ function Students() {
       </div>
 
       {/* Timeline Section */}
-      <div className="flex flex-col items-center justify-center py-10 sm:py-16 bg-white text-icgblue">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">What To Look Out For.</h1>
-        <ApplicationTimeline timelineData={timelineData} />
+      <div className="py-10 sm:py-16 bg-white text-icgblue">
+        <div className="container mx-auto px-4 md:px-10">
+          <h1 className="text2xl sm:text-3xl md:text-5xl font-bold mb-6 text-left">What To <span className='text-[#005d97]'>Look Out</span> For.</h1>
+          <ApplicationTimeline timelineData={timelineData} />
+        </div>
       </div>
     </div>
   );

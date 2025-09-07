@@ -64,8 +64,9 @@ function ApplicationTimeline({ timelineData }) {
                 }}
               >
                 <CardContent>
-                  <h2 className="text-2xl font-semibold text-icgblue">{item.heading}</h2>
-                  <p className="text-lg text-icgblue">{item.content}</p>
+                  <p className="text-2xl font-bold text-[#005d97] mb-2">{item.date}</p>
+                  <h2 className="text-xl  font-bold text-icgblue mb-2">{item.heading}</h2>
+                  <p className="text-base text-gray-600">{item.content}</p>
                 </CardContent>
               </Card>
             </TimelineContent>

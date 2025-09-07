@@ -28,8 +28,8 @@ import {
       {
         id:2,
         quote:
-        "In H1 2025 Artificial by Design partnered with UCI's ICG program on a deep-dive into the future of AI infrastructure—where advanced models, evolving chip architectures and real-time compute demands converge. The ICG team explored these domains with technical rigor by developing insights around model portability, edge to cloud tradeoffs and the architecture of AI-native data centers. We are grateful for the partnership with UCI and proud to support the next generation of thinkers shaping AI at the silicon and systems level. As we build toward a more interoperable, efficient AI future, collaborations like this are key. Wishing this amazing team the very best in their futures and career advancement.",
-        author:"Alex Veytsman Chief Technology and AI Officer @ Artificial by Design"
+        "In H1 2025 Artificial by Design partnered with UCI’s ICG program on a deep-dive into the future of AI infrastructure—where advanced models, evolving chip architectures and real-time compute demands converge… The ICG team explored these domains with technical rigor… developing insights around model portability, edge to cloud tradeoffs and AI-native data centers. We are grateful for the partnership with UCI and proud to support the next generation of thinkers… As we build toward a more interoperable, efficient AI future, collaborations like this are key. Wishing this amazing team the very best in their futures and career advancement.",
+        author:"Former CTO of Dell Technologies"
       }
     ];
   
@@ -109,11 +109,11 @@ import {
   
         {/* Services Section */}
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-icgblue mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#005d97] mb-6">
             Our Services.
           </h2>
-          <p className="text-icgblue mb-12 max-w-6xl text-lg md:text-xl">
-          Our team is made up of top undergraduate talent from the University of California, Irvine, selected for their analytical rigor, leadership, and drive. With every engagement, ICG brings tailored, data-backed strategies that combine fresh thinking with business precision — transforming challenges into opportunities and ideas into results.
+          <p className="text-icgblue font-bold  mb-12 max-w-6xl text-5xl md:text-6xl">
+            Capabilities and Specialties
           </p>
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -202,18 +202,19 @@ import {
         </div>
   
         {/* Timeline Section */}
-        <div className="relative bg-white py-20 mx-4 md:mx-20">
-          <h1 className="text-4xl md:text-6xl pt-10 text-icgblue font-bold">
-            Project Overview.
-          </h1>
-          <p className="text-icgblue font-light text-lg md:text-xl mb-10 mt-4">
-            We believe in full transparency with our partners. Here's how you can expect your
-            project with us to progress.
-          </p>
-          <div className="flex justify-center md:justify-start items-center">
-            <TimelineComponent timelineData={timelineData} />
+          <div className="relative bg-white py-20 mx-4 md:mx-20">
+            <h1 className="text-xl md:text-2xl pt-10 text-[#005d97] font-bold">
+              Project Overview.
+            </h1>
+            <p className="text-icgblue font-bold text-5xl md:text-6xl mb-10 mt-4">
+              What to Expect.
+            </p>
+
+            {/* keep it simple: no flex centering here */}
+            <div className="max-w-[1200px]">
+              <TimelineComponent timelineData={timelineData} maxWidth={1100} />
+            </div>
           </div>
-        </div>
   
         {/* Contact Us Section */}
         <div className="container mx-auto px-4 py-16">

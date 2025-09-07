@@ -1,10 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import FAQItem from '../components/FaqItem';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function Home() {
   const fade_in_text = 'Where Talent Meets Opportunity'.split(' ');
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const carouselData = [
+    {
+      title: "",
+      description: "Dedicated to delivering actionable, strategic insights that move our partners forward.",
+      testimonial: {
+        quote: "The ICG team explored these domains with technical rigor by developing insights around model portability, edge to cloud tradeoffs and the architecture of AI-native data centers.",
+        author: "Alex Veytsman",
+        role: "CEO, Artificial By Design"
+      },
+      image: "/abd.jpeg"
+    },
+    {
+      title: "",
+      description: "Transforming complex business challenges into actionable insights through comprehensive data analysis and strategic thinking.",
+      testimonial: {
+        quote: "ICG's approach to problem-solving was refreshing. They delivered insights that helped us reshape our market strategy.",
+        author: "Sarah Chen",
+        role: "Director, ToughCutie"
+      },
+      image: "/ToughCutie.webp"
+    },
+    // Add more slides as needed
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselData.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + carouselData.length) % carouselData.length);
+  };
+
   const faqs = [
     {
       question: "When is the next recruitment cycle for ICG?",
@@ -75,10 +110,10 @@ function Home() {
           <img
             src="/team3.png"
             alt="ICG Logo"
-            className="w-96 md:w-[500px] h-auto shadow-lg  transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer rounded-sm"
+            className="w-96 md:w-[500px] h-auto shadow-lg  transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer rounded-md"
           />
           <div className="w-11/12 md:w-1/2 px-4">
-            <h1 className="text-3xl md:text-6xl pb-10 font-bold">Welcome to ICG!</h1>
+            <h1 className="text-4xl md:text-7xl pb-10 font-bold">Welcome to <span className="text-[#035e97]">ICG!</span></h1>
             <p className="text-base md:text-xl font-light text-left">
             Irvine Consulting Group (ICG) is a collaborative, preeminent strategy consulting organization at UC Irvine, dedicated to shaping future leaders in consulting through experiential learning and development opportunities.
             </p>
@@ -88,71 +123,80 @@ function Home() {
 
       {/* New Gray Section */}
       <div className="relative bg-gray-100 w-full py-12">
-        <div className="overflow-x-auto scrollbar-hide">
-          <div className="flex flex-col md:flex-row items-center md:px-5 gap-4">
-            {/* Left: Text and Button */}
-            <div className="w-full md:w-1/2 mb-8 md:mb-0 flex-shrink-0">
-              <h2 className="text-3xl md:text-5xl font-bold text-icgblue mb-4">
-                Dedicated to deliver high-value strategic deliverables to our parterns.
-              </h2>
-              <Link
-                to="/contact"
-                className="inline-block bg-icgblue text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition-colors mt-5"
-              >
-                Contact Us
-              </Link>
-            </div>
-            {/* Right: Testimonial and Image */}
-            <div className="w-full md:w-1/2 flex flex-col md:flex-row items-stretch gap-4 flex-shrink-0">
-              {/* Testimonial Area */}
-              <div className="bg-white rounded-xl shadow-lg p-6 flex-1 flex flex-col justify-between min-w-[250px] max-w-[350px]">
-                <div className="flex items-start">
-                  <span className="text-5xl md:text-6xl text-icgblue font-extrabold leading-none mr-2">“</span>
-                  <div>
-                    <p className="text-base md:text-2xl font-medium text-gray-700">
-                      The ICG team explored these domains with technical rigor by developing insights around model portability, edge to cloud tradeoffs and the architecture of AI-native data centers.
-                    </p>
+        <div className="container ml-auto  md:px-10">
+          <h1 className="text-4xl md:text-6xl font-bold text-icgblue mb-10">Our <span className="text-[#035e97]">Work.</span></h1>
+          <div className="overflow-hidden">
+          <div 
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {carouselData.map((slide, index) => (
+              <div key={index} className="w-full flex-shrink-0">
+                <div className="flex flex-col md:flex-row gap-4 max-w-7xl justify-between">
+                  {/* Left: Text and Button */}
+                  <div className="w-full md:w-[25%] lg:w-[20%] mb-8 md:mb-0">
+                    <p className="text-gray-700 mb-4 text-lg md:text-xl font-light">{slide.description}</p>
+                    <div className="flex flex-col items-start">
+                      <Link
+                        to="/contact"
+                        className="inline-block bg-icgblue text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-800 transition-colors"
+                      >
+                        Work With Us
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-6 w-full md:w-[70%] lg:w-[75%]">
+                    {/* Image */}
+                    <div className="w-full md:w-3/5">
+                      <img
+                        src={slide.image}
+                        alt="Client Work"
+                        className="w-full h-[28rem] object-cover rounded-xl shadow-lg"
+                      />
+                    </div>
+                    {/* Testimonial Card */}
+                    <div className="w-full md:w-2/5 bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between min-w-[320px]">
+                      <div className="flex items-start">
+                        <span className="text-5xl md:text-6xl text-icgblue font-extrabold leading-none mr-2">"</span>
+                        <div>
+                          <p className="text-base md:text-lg font-medium text-gray-700">
+                            {slide.testimonial.quote}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="mt-6">
+                        <span className="block font-bold text-icgblue">{slide.testimonial.author}</span>
+                        <span className="block text-gray-500 text-sm">{slide.testimonial.role}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="mt-6">
-                  <span className="block font-bold text-icgblue">Alex Veytsman</span>
-                  <span className="block text-gray-500 text-sm">CEO, Artificial By Design</span>
-                </div>
               </div>
-              {/* Image */}
-              <img
-                src="/abd.jpeg"
-                alt="ICG Team"
-                className="w-96 h-96 object-cover rounded-xl shadow-lg"
-              />
+            ))}
+          </div>
+        </div>
+          {/* Navigation Arrows */}
+          <div className="container mx-auto px-4 md:px-10 mt-8">
+            <div className="flex gap-4">
+              <button
+                onClick={prevSlide}
+                className="p-2 rounded-full bg-icgblue text-white hover:bg-blue-800 transition-colors"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="p-2 rounded-full bg-icgblue text-white hover:bg-blue-800 transition-colors"
+                aria-label="Next slide"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>
       </div>
-      
-      {/* Our Mission Section */}
-      <div className="relative w-full bg-white py-16">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
-          {/* Left Text Section */}
-          <div className="md:w-2/5 flex flex-col justify-between h-full text-center md:text-right">
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue mb-10">
-              Our Mission.
-            </h2>
-            <p className="text-lg md:text-xl text-gray-700 mt-4">
-              Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, career exploration, skill training, and professional development opportunities to help students excel in consulting and beyond.
-            </p>
-          </div>
 
-          {/* Right Image Section */}
-          <div className="md:w-3/5">
-            <img
-              src="/mohan_khang.png"
-              alt="Teamwork"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-      </div>
 
       {/* Full-Width Section */}
       <div
@@ -165,36 +209,33 @@ function Home() {
         <div className="absolute inset-0 bg-icgblue bg-opacity-70"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center h-full text-white text-center mt-0 px-4 gap-8">
-          <div className="text-left w-full md:w-1/2 mb-8 md:mb-0 mt-20">
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-2">By the Numbers</h1>
-            <p className="text-lg md:text-2xl font-light">
-              Founded in 2025, the ICG team has been creating meaningful impact
-            </p>
+        <div className="relative z-10 flex flex-col md:flex-row pt-20 justify-center h-full text-white text-center px-4 gap-8">
+          <div className="text-left w-full md:w-1/2 mb-8 md:mb-0 ">
+            <h1 className="text-4xl md:text-6xl font-extrabold mb-8">The Numbers.</h1>
           </div>
           <div className="w-full md:w-1/2">
             <div className="flex flex-col gap-8">
-              <div className="flex items-center justify-start space-x-4">
-                <h1 className="font-bold text-5xl md:text-7xl">3+</h1>
-                <div className="text-left text-xl md:text-3xl">
+              <div className="flex items-start space-x-4">
+                <h1 className="font-bold text-5xl md:text-7xl">5+</h1>
+                <div className="text-left pl-10">
                   <h1 className="font-bold text-2xl md:text-5xl">Clients served</h1>
                   <p className="text-xl md:text-3xl font-light">
-                    Across industries like technology and consumer goods.
+                    Across tech, consumer goods.
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-start space-x-4">
+              <div className="flex items-start space-x-4">
                 <h1 className="font-bold text-5xl md:text-7xl">11+</h1>
-                <div className="text-left text-xl md:text-3xl">
+                <div className="text-left pl-5">
                   <h1 className="font-bold text-2xl md:text-5xl">Consultants</h1>
                   <p className="text-xl md:text-3xl font-light">
                     Across various fields and skillsets.
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-start space-x-4 mb-10">
+              <div className="flex items-start space-x-4 mb-10">
                 <h1 className="font-bold text-5xl md:text-7xl">80+</h1>
-                <div className="text-left text-xl md:text-3xl">
+                <div className="text-left">
                   <h1 className="font-bold text-2xl md:text-5xl">Attendees</h1>
                   <p className="text-xl md:text-3xl font-light">
                     In consulting workshops.
@@ -202,6 +243,33 @@ function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Our Mission Section */}
+      <div className="relative w-full bg-white py-16">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
+          {/* Left Text Section */}
+          <div className="md:w-2/5 flex flex-col justify-between h-full text-center md:text-right">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue text-left mb-10">
+              Our <scan className="text-[#035e97]">People.</scan>
+            </h2>
+            <p className=" text-left text-lg md:text-xl text-gray-700 mt-4">
+              Founded on the vision of making consulting accessible to all, ICG provides hands-on client engagements, career exploration, skill training, and professional development opportunities to help students excel in consulting and beyond.
+            </p>
+            <Link to="/students" className="w-1/4  text-center inline-block bg-icgblue text-white font-semibold px-6 py-3 mt-6 rounded-full hover:bg-blue-800 transition-colors">
+              Join Us
+            </Link>
+          </div>
+
+          {/* Right Image Section */}
+          <div className="md:w-3/5">
+            <img
+              src="/mohan_khang.png"
+              alt="Teamwork"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
@@ -228,25 +296,27 @@ function Home() {
       </div>*/}
 
       {/* FAQ Section */}
-      <div className="relative bg-white py-10 text-icgblue">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue mb-4">
-              Frequently Asked Questions.
-            </h2>
-            <p className="text-sm sm:text-lg font-light max-w-2xl mx-auto">
-              Find answers to common questions about our consulting services and approach.
-            </p>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            {faqs.map((faq, index) => (
-              <FAQItem
-                key={index}
-                question={faq.question}
-                answer={faq.answer}
-                isLast={index === faqs.length - 1}
-              />
-            ))}
+      <div className="relative bg-white py-16 text-icgblue">
+        <div className="container mx-auto px-4 md:px-10">
+          <div className="flex flex-col md:flex-row justify-between gap-12">
+            <div className="md:w-1/3 text-right">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-icgblue mb-4">
+                Common <span className="text-[#035e97]">Questions.</span>
+              </h2>
+              <h2 className=" pt-10 text-2xl sm:text-4xl md:text-5xl font-bold text-icgblue mb-4">
+                Quick <span className="text-[#035e97]">Answers.</span>
+              </h2>
+            </div>
+            <div className="md:w-2/3">
+              {faqs.map((faq, index) => (
+                <FAQItem
+                  key={index}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isLast={index === faqs.length - 1}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
