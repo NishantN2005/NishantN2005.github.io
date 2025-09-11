@@ -24,8 +24,8 @@ function Home() {
       description: "Transforming complex business challenges into actionable insights through comprehensive data analysis and strategic thinking.",
       testimonial: {
         quote: "ICG's approach to problem-solving was refreshing. They delivered insights that helped us reshape our market strategy.",
-        author: "Sarah Chen",
-        role: "Director, ToughCutie"
+        author: "Brittany Coleman",
+        role: "Founder and CEO, ToughCutie"
       },
       image: "/ToughCutie.webp"
     },
@@ -112,7 +112,7 @@ function Home() {
             alt="ICG Logo"
             className="w-96 md:w-[500px] h-auto shadow-lg  transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer rounded-md"
           />
-          <div className="w-11/12 md:w-1/2 px-4">
+          <div className="w-11/12 md:w-full px-4">
             <h1 className="text-4xl md:text-7xl pb-10 font-bold">Welcome to <span className="text-[#035e97]">ICG!</span></h1>
             <p className="text-base md:text-xl font-light text-left">
             Irvine Consulting Group (ICG) is a collaborative, preeminent strategy consulting organization at UC Irvine, dedicated to shaping future leaders in consulting through experiential learning and development opportunities.
@@ -209,47 +209,49 @@ function Home() {
         <div className="absolute inset-0 bg-icgblue bg-opacity-70"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:flex-row pt-20 justify-center h-full text-white text-center px-4 gap-8">
+        <div className="relative  flex flex-col md:flex-row pt-20 justify-center h-full text-white text-center px-8 container ml-auto">
           <div className="text-left w-full md:w-1/2 mb-8 md:mb-0 ">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-8">The Numbers.</h1>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 flex -ml-4">
             <div className="flex flex-col gap-8">
               <div className="flex items-start space-x-4">
                 <h1 className="font-bold text-5xl md:text-7xl">5+</h1>
-                <div className="text-left pl-10">
-                  <h1 className="font-bold text-2xl md:text-5xl">Clients served</h1>
-                  <p className="text-xl md:text-3xl font-light">
-                    Across tech, consumer goods.
-                  </p>
-                </div>
               </div>
               <div className="flex items-start space-x-4">
                 <h1 className="font-bold text-5xl md:text-7xl">11+</h1>
-                <div className="text-left pl-5">
-                  <h1 className="font-bold text-2xl md:text-5xl">Consultants</h1>
-                  <p className="text-xl md:text-3xl font-light">
-                    Across various fields and skillsets.
-                  </p>
-                </div>
               </div>
               <div className="flex items-start space-x-4 mb-10">
                 <h1 className="font-bold text-5xl md:text-7xl">80+</h1>
-                <div className="text-left">
-                  <h1 className="font-bold text-2xl md:text-5xl">Attendees</h1>
-                  <p className="text-xl md:text-3xl font-light">
-                    In consulting workshops.
-                  </p>
-                </div>
               </div>
             </div>
+          <div className="flex flex-col gap-6 pl-10">
+            <div className="text-left">
+              <h1 className="font-bold text-2xl md:text-5xl">Clients served</h1>
+              <p className="text-xl md:text-3xl font-light">
+                Across tech, consumer goods.
+              </p>
+            </div>
+            <div className="text-left ">
+              <h1 className="font-bold text-2xl md:text-5xl">Consultants</h1>
+              <p className="text-xl md:text-3xl font-light">
+                Across various fields and skillsets.
+              </p>
+            </div>
+            <div className="text-left">
+              <h1 className="font-bold text-2xl md:text-5xl">Attendees</h1>
+              <p className="text-xl md:text-3xl font-light">
+                In consulting workshops.
+              </p>
+            </div>
+          </div>
           </div>
         </div>
       </div>
       
       {/* Our Mission Section */}
       <div className="relative w-full bg-white py-16">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
+        <div className="container ml-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
           {/* Left Text Section */}
           <div className="md:w-2/5 flex flex-col justify-between h-full text-center md:text-right">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue text-left mb-10">
@@ -268,7 +270,7 @@ function Home() {
             <img
               src="/mohan_khang.png"
               alt="Teamwork"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-96 md:w-[700px] h-auto shadow-lg  transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#376cbb] hover:cursor-pointer rounded-md"
             />
           </div>
         </div>
@@ -297,17 +299,14 @@ function Home() {
 
       {/* FAQ Section */}
       <div className="relative bg-white py-16 text-icgblue">
-        <div className="container mx-auto px-4 md:px-10">
-          <div className="flex flex-col md:flex-row justify-between gap-12">
-            <div className="md:w-1/3 text-right">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-icgblue mb-4">
-                Common <span className="text-[#035e97]">Questions.</span>
-              </h2>
-              <h2 className=" pt-10 text-2xl sm:text-4xl md:text-5xl font-bold text-icgblue mb-4">
-                Quick <span className="text-[#035e97]">Answers.</span>
-              </h2>
+        <div className="container ml-auto  px-4">
+          <div className="flex flex-col md:flex-col justify-between ">
+            <div className="md:w-1/2 text-right">
+                <h1 className="text-4xl md:text-6xl font-bold text-icgblue mb-10 text-nowrap">Common <span className="text-[#035e97]">Questions</span>, Quick <span className="text-[#035e97]">Answers.</span></h1>
+
+              
             </div>
-            <div className="md:w-2/3">
+            <div className="md:w-[90%]">
               {faqs.map((faq, index) => (
                 <FAQItem
                   key={index}
@@ -323,17 +322,19 @@ function Home() {
 
       {/* Final Section */}
       <div className="relative bg-white py-16">
-        <h2 className="text-3xl sm:text-5xl md:text-6xl text-left text-icgblue font-bold mb-8 pl-4 md:pl-10">
+        <div className='container ml-auto'>
+        <h2 className="text-3xl sm:text-5xl md:text-6xl text-left text-icgblue font-bold mb-8">
           Enough about us. <br /> <span className="font-light">What can we do for you?</span>
         </h2>
 
-        <div className="flex flex-col text-left pl-4 md:pl-10 space-y-4 text-base sm:text-2xl text-icgblue">
+        <div className="flex flex-col text-left  space-y-4 text-base sm:text-2xl text-icgblue">
           <Link to="/students" className="underline hover:text-blue-900">
             I am a student.
           </Link>
           <Link to="/contact" className="underline hover:text-blue-900">
             I am a business.
           </Link>
+        </div>
         </div>
       </div>
     </div>

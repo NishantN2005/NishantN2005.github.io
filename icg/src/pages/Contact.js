@@ -109,10 +109,10 @@ import {
   
         {/* Services Section */}
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-xl md:text-2xl font-bold text-[#005d97] mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#005d97]">
             Our Services.
           </h2>
-          <p className="text-icgblue font-bold  mb-12 max-w-6xl text-5xl md:text-6xl">
+          <p className="text-icgblue font-bold  mt-4 mb-12 max-w-6xl text-5xl md:text-6xl">
             Capabilities and Specialties
           </p>
           {/* Services Grid */}
@@ -207,11 +207,11 @@ import {
               Project Overview.
             </h1>
             <p className="text-icgblue font-bold text-5xl md:text-6xl mb-10 mt-4">
-              What to Expect.
+              What to Expect
             </p>
 
             {/* keep it simple: no flex centering here */}
-            <div className="max-w-[1200px]">
+            <div className="max-w-[1200px] flex items-center justify-center mx-auto">
               <TimelineComponent timelineData={timelineData} maxWidth={1100} />
             </div>
           </div>

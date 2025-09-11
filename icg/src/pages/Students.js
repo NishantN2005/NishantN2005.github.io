@@ -4,6 +4,10 @@ import DevelopmentCarousel from "../components/DevelopmentCarousel";
 import FAQItem from '../components/FaqItem';
 
 function Students() {
+  const SOCIAL = {
+    linkedin: "https://www.linkedin.com/company/irvineconsultinggroup/posts/?feedView=all",         // TODO: replace with your actual LinkedIn page
+    instagram: "https://www.instagram.com/icg.uci/",       // TODO: replace with your actual Instagram handle
+  };
   const faqs = [
     {
       question: "Client Services",
@@ -25,30 +29,61 @@ function Students() {
 
   const timelineData = [
     {
-      date: 'September 15, 2025',
-      heading: 'Applications Open',
-      content:
-        'Begin the recruitment process by submitting an application by answering basic information and a couple short response questions so we get to know you better.',
-    },
-    {
       date: 'September 22, 2025',
-      heading: '1st Round Interviews',
-      content: 'We put a face to the application :).',
+      heading: 'Applications Open',
+      content: (
+        <>
+          Apply to join ICG and take the first step toward a hands-on consulting experience. Stay connected on{" "}
+          <a
+            href={SOCIAL.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80"
+          >
+            LinkedIn
+          </a>
+          {", "}
+          <a
+            href={SOCIAL.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80"
+          >
+            Instagram
+          </a>
+          {", and our website for the application link."}
+        </>
+      ),
     },
     {
-      date: 'September 29, 2025',
-      heading: '2nd Round Interviews',
-      content: 'Getting to know more about you and your interests.',
+      date: 'Week 0',
+      heading: 'In-Person Info Session',
+      content: 'Meet the team, learn about ICG, and ask questions. (Details to be announced soon.)',
     },
     {
-      date: 'October 6, 2025',
-      heading: 'Case Competition',
-      content: 'Pair up with other students and compete in a case competition.',
+      date: 'Week 1',
+      heading: 'Online Info Session',
+      content: 'Couldn’t make it in person? Join us virtually to learn more. (Details to be announced soon.)',
     },
     {
-      date: 'October 13, 2025',
-      heading: 'You are in!',
-      content: 'If we believe you have what it takes, welcome to ICG.',
+      date: 'October 2, 2025',
+      heading: 'Applications Close',
+      content: 'Don’t miss the deadline, applications must be submitted by 11:59 PM.',
+    },
+    {
+      date: 'October 4-5, 2025',
+      heading: 'Case Interview (Invite Only)',
+      content: 'Work with other candidates in a group case interview.',
+    },
+    {
+      date: 'October 6-8, 2025',
+      heading: 'Behavioral Interview (Invite Only)',
+      content: 'Share your story, experiences, and fit for ICG.',
+    },
+    {
+      date: 'October 9, 2025',
+      heading: 'Welcome to ICG!',
+      content: 'Successful candidates will be invited to join as Fall ‘25 Junior Associates.',
     },
   ];
 
@@ -142,7 +177,7 @@ function Students() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg sm:text-xl font-medium text-blue-900 mb-2">
+                <h3 className="text-lg sm:text-xl font-medium text-[#005d97] mb-2">
                   {testimonial.name}
                 </h3>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base flex-grow">{testimonial.quote}</p>
