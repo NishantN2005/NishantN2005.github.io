@@ -51,7 +51,15 @@ function Students() {
           >
             Instagram
           </a>
-          {", and our website for the application link."}
+          {", and our website for updates."}<br /><br />
+          <a
+            href="https://forms.gle/CjEGDBWi4g5Gj1yM6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-icgblue font-semibold underline hover:opacity-80"
+          >
+            Apply Here
+          </a>
         </>
       ),
     },
@@ -128,7 +136,7 @@ function Students() {
           </p>
           <button
             className="mt-4 bg-icgblue text-white px-4 py-2 sm:px-6 sm:py-3 text-base sm:text-xl font-bold rounded-md hover:bg-[#001f54] border"
-            onClick={() => window.open('https://docs.google.com/forms/d/...')}
+            onClick={() => window.open('https://forms.gle/CjEGDBWi4g5Gj1yM6')}
           >
             Apply Now
           </button>
