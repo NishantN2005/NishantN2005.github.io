@@ -302,7 +302,7 @@ function Home() {
         <div className="container ml-auto  px-4">
           <div className="flex flex-col md:flex-col justify-between ">
             <div className="md:w-1/2 text-right">
-                <h1 className="text-4xl md:text-6xl font-bold text-icgblue mb-10 text-nowrap">Common <span className="text-[#035e97]">Questions</span>, Quick <span className="text-[#035e97]">Answers.</span></h1>
+                <h1 className="text-4xl md:text-6xl font-bold text-icgblue mb-10">Common <span className="text-[#035e97]">Questions</span>, Quick <span className="text-[#035e97]">Answers.</span></h1>
 
               
             </div>
