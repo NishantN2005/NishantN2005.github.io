@@ -64,9 +64,9 @@ function Students() {
       ),
     },
     {
-      date: 'Week 0',
+      date: 'September 26, 2025',
       heading: 'In-Person Info Session',
-      content: 'Meet the team, learn about ICG, and ask questions. (Details to be announced soon.)',
+      content: 'Meet the team, learn about ICG, and ask questions at SB1 2200, Friday at 3:00 PM.',
     },
     {
       date: 'Week 1',
