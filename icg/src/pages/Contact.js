@@ -28,8 +28,20 @@ import {
       {
         id:2,
         quote:
-        "In H1 2025 Artificial by Design partnered with UCI’s ICG program on a deep-dive into the future of AI infrastructure—where advanced models, evolving chip architectures and real-time compute demands converge… The ICG team explored these domains with technical rigor… developing insights around model portability, edge to cloud tradeoffs and AI-native data centers. We are grateful for the partnership with UCI and proud to support the next generation of thinkers… As we build toward a more interoperable, efficient AI future, collaborations like this are key. Wishing this amazing team the very best in their futures and career advancement.",
+        "In H1 2025 Artificial by Design partnered with UCI’s ICG program on a deep-dive into the future of AI infrastructure where advanced models, evolving chip architectures and real-time compute demands converge… The ICG team explored these domains with technical rigor… developing insights around model portability, edge to cloud tradeoffs and AI-native data centers. We are grateful for the partnership with UCI and proud to support the next generation of thinkers… As we build toward a more interoperable, efficient AI future, collaborations like this are key. Wishing this amazing team the very best in their futures and career advancement.",
         author:"Former CTO of Dell Technologies"
+      },
+      {
+        id:3,
+        quote:
+        "It was a real pleasure working with the Irvine Consulting student team. They tackled a complex and demanding assignment and helped shape AdGreetz’s expansion strategy with remarkable professionalism, clarity, and dedication. The team delivered a high-quality and well-thought-out suite of materials. Their ability to distill complex financials and strategic options into clear insights was impressive, and their final presentation was polished, thoughtful, and actionable. I’d gladly recommend working with them to any founder or executive seeking smart, reliable, and insightful support.",
+        author:"CEO of Adgreetz"
+      },
+      {
+        id:4,
+        quote:
+        "Everyone on the team was very sharp and engaged. They executed as a team very well, were always prepared and when feedback was provided, they acted upon it timely. I would highly recommend working with them and wouldn't hesistate to do so again!",
+        author:"CEO of ToughCutie"
       }
     ];
   
@@ -62,7 +74,7 @@ import {
         leftText: "Week 6-10",
         heading: "Final Presentation",
         content:
-          "After thorough review by the Director of Consulting and project mentor(s), the team will present their findings and actionable recommendations in a detailed final presentation.",
+          "After thorough review by the Strategy Vice President and project mentor(s), the team will present their findings and actionable recommendations in a detailed final presentation.",
       },
       {
         leftText: "Post-Project",

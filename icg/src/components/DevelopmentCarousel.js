@@ -9,7 +9,7 @@ export default function DevelopmentCarousel() {
       number: "1",
       title_one: "Built For",
       title_two: "Real Impact",
-      subtitle:"We move fast - ICG doesn’t wait for opportunity, we create it.",
+      subtitle:"ICG doesn’t wait for opportunity, we create it.",
       description:
         "From day one, you'll be on the front lines of innovation, solving real-world challenges with passionate teammates. This hands-on experience ensures you're client-ready from the start.",
       imageUrl: "/1.png",
@@ -27,9 +27,9 @@ export default function DevelopmentCarousel() {
     {
       id: 3,
       number: "3",
-      title_one: "Work with",
+      title_one: "Work With",
       title_two: "Real Companies",
-      subtitle:"Our culture embraces the grind — late nights, big wins.",
+      subtitle:"Our culture embraces the grind, late nights, and big wins.",
       description:
         "You'll grow by being in the thick of it, applying your knowledge in fast-paced, high-impact situations. Success here comes from resilience, curiosity, and the willingness to dive head first.",
       imageUrl: "/3.png",

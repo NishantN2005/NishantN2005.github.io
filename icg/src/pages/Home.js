@@ -44,17 +44,17 @@ function Home() {
     {
       question: "When is the next recruitment cycle for ICG?",
       answer:
-        "The next recruitment cycle for Irvine Consulting Group will take place in Fall 2025. Stay tuned for more information on our recruitment process and application timeline.",
+        "For recruitment information, check out the Join Us page. All information will be updated on a quarterly basis.",
     },
     {
       question: "How long does a typical consulting project take?",
       answer:
-        "The duration of our consulting projects varies depending on the scope and complexity of the engagement - we typically aim to complete them in 10 weeks. However, depending on the scope and demand of the project, this can fluctuate to ensure quality.",
+        "The duration of our consulting projects varies depending on the scope and complexity of the engagement, we typically aim to complete them in 10 weeks. However, depending on the scope and demand of the project, this can fluctuate to ensure quality.",
     },
     {
       question: "What makes your consulting approach different?",
       answer:
-        "Our approach is distinguished by three key factors: First, we focus on practical, implementable solutions rather than theoretical frameworks. Second, we emphasize knowledge transfer to ensure your team can sustain the improvements after our engagement ends. Third, we measure our success by the tangible results and ROI we deliver to your business.",
+        "Our approach is distinguished by three key factors: First, we focus on practical, implementable solutions rather than theoretical frameworks. Second, we emphasize knowledge transfer to ensure your team can sustain the improvements after our engagement ends. Third, we measure our success by the tangible results and return on investment (ROI) we deliver to your business.",
     },
     {
       question: "How do you measure the success of your consulting engagements?",
@@ -123,16 +123,16 @@ function Home() {
 
       {/* New Gray Section */}
       <div className="relative bg-gray-100 w-full py-12">
-        <div className="container ml-auto  md:px-10">
+        <div className="container ml-auto  ">
           <h1 className="text-4xl md:text-6xl font-bold text-icgblue mb-10">Our <span className="text-[#035e97]">Work.</span></h1>
-          <div className="overflow-hidden">
+          <div className="overflow-hidden ml-10">
           <div 
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {carouselData.map((slide, index) => (
-              <div key={index} className="w-full flex-shrink-0">
-                <div className="flex flex-col md:flex-row gap-4 max-w-7xl justify-between">
+              <div key={index} className="w-full flex-shrink-0 ml-5">
+                <div className="flex flex-col md:flex-row gap-10 max-w-7xl justify-between">
                   {/* Left: Text and Button */}
                   <div className="w-full md:w-[25%] lg:w-[20%] mb-8 md:mb-0">
                     <p className="text-gray-700 mb-4 text-lg md:text-xl font-light">{slide.description}</p>
@@ -145,6 +145,7 @@ function Home() {
                       </Link>
                     </div>
                   </div>
+                  
                   <div className="flex flex-col md:flex-row gap-6 w-full md:w-[70%] lg:w-[75%]">
                     {/* Image */}
                     <div className="w-full md:w-3/5">
@@ -176,7 +177,7 @@ function Home() {
           </div>
         </div>
           {/* Navigation Arrows */}
-          <div className="container mx-auto px-4 md:px-10 mt-8">
+          <div className="container mx-auto px-4 md:px-10 mt-8 ml-10">
             <div className="flex gap-4">
               <button
                 onClick={prevSlide}
@@ -209,7 +210,7 @@ function Home() {
         <div className="absolute inset-0 bg-icgblue bg-opacity-70"></div>
 
         {/* Content */}
-        <div className="relative  flex flex-col md:flex-row pt-20 justify-center h-full text-white text-center px-8 container ml-auto">
+        <div className="relative flex flex-col md:flex-row pt-20 justify-center h-full text-white text-center container ml-auto">
           <div className="text-left w-full md:w-1/2 mb-8 md:mb-0 ">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-8">The Numbers.</h1>
           </div>
@@ -251,7 +252,7 @@ function Home() {
       
       {/* Our Mission Section */}
       <div className="relative w-full bg-white py-16">
-        <div className="container ml-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 gap-8">
+        <div className="container ml-auto flex flex-col md:flex-row items-center justify-between px-4  gap-20">
           {/* Left Text Section */}
           <div className="md:w-2/5 flex flex-col justify-between h-full text-center md:text-right">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-icgblue text-left mb-10">

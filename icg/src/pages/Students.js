@@ -11,15 +11,15 @@ function Students() {
   const faqs = [
     {
       question: "Client Services",
-      answer: "At ICG, you don't just shadow – you serve. You will work directly with real clients across industries, helping them solve meaningful business challenges. You'll learn how to communicate professionally, ask the right questions, and technical skill that will help deliver strategic, impactful recommendations for our clients. It's a chance to build client-facing confidence early in your consulting journey.",
+      answer: "At ICG we don't believe in just shadowing, we believe in impact. You will work directly with real clients across industries, helping them solve meaningful business challenges. You'll learn how to communicate professionally, ask the right questions, and technical skill that will help deliver strategic, impactful recommendations for our clients. It's a chance to build client-facing confidence early in your consulting journey.",
     },
     {
       question: "Career Exploration and Development",
-      answer: "Whether you're still figuring it out or dead-set on consulting, ICG helps you explore your career path with intention. Our workshops, alumni panels, and professional development program are designed to help you understand different industries and roles, build your network, and sharpen your professional edge. We don't just prep you for interviews — we help you find clarity and direction."
+      answer: "Whether you're still figuring it out or dead-set on consulting, ICG helps you explore your career path with intention. Our workshops, alumni panels, and professional development program are designed to help you understand different industries and roles, build your network, and sharpen your professional edge. We don't just prep you for interviews, we ensure success."
     },
     {
       question: "Technical & Core Consulting Skills",
-      answer: "We start with the basics — and move fast. In your first few weeks, you'll get training in case structuring, problem solving, slide design, and market research. From there, you'll immediately apply these skills on client teams. With consistent feedback and high standards, ICG develops strong consultants through hands-on practice, not just theory."
+      answer: "We start with the basics and move fast. In your first few weeks, you'll get training in case structuring, problem solving, slide design, and market research. From there, you'll immediately apply these skills on client teams. With consistent feedback and high standards, ICG develops strong consultants through hands-on practice, not just theory."
     },
     {
       question: "Industry Level Thinking",
@@ -56,7 +56,7 @@ function Students() {
             href="https://forms.gle/CjEGDBWi4g5Gj1yM6"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-icgblue font-semibold underline hover:opacity-80"
+            className="text-icgblue font-semibold hover:opacity-80 border-2 p-2 rounded-md border-black bg-blue-100"
           >
             Apply Here
           </a>
