@@ -76,7 +76,7 @@ function Students() {
     {
       date: 'October 2, 2025',
       heading: 'Applications Close',
-      content: 'Don’t miss the deadline, applications must be submitted by 11:59 PM.',
+      content: 'Don’t miss the deadline, applications must be submitted by 12:00 PM.',
     },
     {
       date: 'October 4-5, 2025',
